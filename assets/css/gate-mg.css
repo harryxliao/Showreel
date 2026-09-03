@@ -1,0 +1,450 @@
+/* Gate_MG Page Styles */
+
+.gate-mg-page {
+  background: #040404;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.gate-mg-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: calc(100px + env(safe-area-inset-top)) 24px 100px;
+}
+
+/* Header Grid Layout */
+.project-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-bottom: 32px;
+  padding-bottom: 0px;
+  align-items: end;
+}
+
+.project-title-area h1 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(40px, 8vw, 84px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.project-title-area p.subtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(13px, 1.5vw, 16px);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 680px;
+}
+
+/* Metadata Table */
+.project-meta-table {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.meta-row:last-child {
+  border-bottom: none;
+}
+
+.meta-label {
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+}
+
+.meta-value {
+  color: #ffffff;
+  text-align: right;
+}
+
+/* Media Block Elements */
+.media-block {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.media-block.full-width {
+  width: 100%;
+}
+
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: #0d0d0d;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.iframe-wrapper:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  opacity: 0;
+  animation: iframeFadeIn 2s ease-in-out 0.8s forwards;
+}
+
+@keyframes iframeFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  background: #0d0d0d;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.02);
+}
+
+/* Caption and Text styling */
+.block-caption {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Multi-column layouts */
+.content-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.text-section h3 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(24px, 3.5vw, 40px);
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.text-section p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Quote/Highlight Banner */
+.quote-banner {
+  text-align: center;
+  padding: 50px 20px;
+  margin: 30px 0;
+}
+
+.quote-banner h2 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(24px, 4.5vw, 54px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Footer Section */
+.project-footer {
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 60px;
+}
+
+.project-footer-logo {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.project-footer-text {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 40px;
+}
+
+.project-footer-text a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.project-footer-text a:hover {
+  opacity: 0.8;
+}
+
+/* Floating/Fixed Back to Work Button */
+.back-to-work-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: transparent;
+  cursor: pointer;
+}
+
+.back-to-work-btn:hover {
+  background: #ffffff;
+  color: #040404;
+  border-color: #ffffff;
+}
+
+/* Responsive adjustment */
+@media (max-width: 900px) {
+  .project-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .content-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .quote-banner {
+    padding: 60px 10px;
+  }
+}
+
+/* ── Key Contributions Section ── */
+.contributions-section {
+  margin: 28px 0 28px;
+  padding-top: 0;
+}
+
+.contributions-header {
+  margin-bottom: 48px;
+}
+
+.contributions-kicker {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+  margin: 0 0 14px 0;
+}
+
+.contributions-header h2,
+.tools-header h2 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(28px, 4vw, 52px);
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+}
+
+.contributions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contribution-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  padding: 28px 0;
+  align-items: start;
+  transition: background 0.2s ease;
+}
+
+.contribution-number {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.25);
+  padding-top: 4px;
+}
+
+.contribution-content h4 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(18px, 2.2vw, 24px);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.contribution-content p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.62);
+  margin: 0;
+}
+
+/* ── Impact Stats Strip ── */
+.impact-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 24px 0;
+  margin: 0 0 52px 0;
+}
+
+.impact-stat {
+  flex: 1;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.impact-num {
+  display: block;
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(40px, 7vw, 80px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.impact-label {
+  display: block;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.impact-divider {
+  width: 1px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+/* ── Tools & Process Section ── */
+.tools-section {
+  margin: 0 0 50px 0;
+  padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.tools-header {
+  margin-bottom: 32px;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.tool-pill {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.75);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tool-pill:hover {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.tools-desc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 720px;
+  margin: 0;
+}
+
+/* ── Mobile: Contribution & Stats responsive ── */
+@media (max-width: 760px) {
+  .contributions-section {
+    margin: 40px 0 36px;
+    padding-top: 40px;
+  }
+
+  .contribution-card {
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+    padding: 22px 0;
+  }
+
+  .impact-strip {
+    flex-direction: column;
+    gap: 28px;
+    padding: 36px 0;
+  }
+
+  .impact-divider {
+    width: 40px;
+    height: 1px;
+  }
+
+  .impact-stat {
+    padding: 0;
+  }
+
+  .tools-section {
+    padding: 40px 0;
+  }
+}

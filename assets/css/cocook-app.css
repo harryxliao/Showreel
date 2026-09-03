@@ -1,0 +1,307 @@
+/* Cocook App Page Styles */
+
+.cocook-app-page {
+  background: #040404;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.cocook-app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: calc(100px + env(safe-area-inset-top)) 24px 100px;
+}
+
+/* Header Grid Layout */
+.project-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+  padding-bottom: 0px;
+  align-items: end;
+}
+
+.project-title-area h1 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(40px, 8vw, 84px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.project-title-area p.subtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(13px, 1.5vw, 16px);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 680px;
+}
+
+/* Metadata Table */
+.project-meta-table {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.meta-row:last-child {
+  border-bottom: none;
+}
+
+.meta-label {
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+}
+
+.meta-value {
+  color: #ffffff;
+  text-align: right;
+}
+
+/* Media Block Elements */
+.media-block {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.media-block.full-width {
+  width: 100%;
+}
+
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: #0d0d0d;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.3s ease;
+  border-radius: 0;
+}
+
+.iframe-wrapper:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  opacity: 0;
+  animation: iframeFadeIn 2s ease-in-out 0.8s forwards;
+}
+
+@keyframes iframeFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  background: #0d0d0d;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.02);
+}
+
+/* Block Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-kicker {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+  margin: 0 0 14px 0;
+}
+.section-header h2 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(28px, 4vw, 52px);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+}
+
+/* Multi-column layouts */
+.content-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.text-section h3 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(24px, 3.5vw, 40px);
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 16px 0;
+}
+
+.text-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-section ul li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.text-section ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Problem Cards Grid */
+.problem-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.problem-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.problem-icon {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.problem-card h4 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: 22px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.problem-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* User Research Scenarios */
+.scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.scenario-card {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.scenario-card span {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin-top: 12px;
+}
+.scenario-icon {
+  font-size: 24px;
+}
+
+/* Branding specifics */
+.brand-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand-image img {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* Footer Section */
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-header,
+  .content-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .problem-cards-grid,
+  .scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cocook-app-container {
+    padding: calc(80px + env(safe-area-inset-top)) 20px 80px;
+  }
+}

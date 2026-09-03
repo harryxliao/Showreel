@@ -1,0 +1,865 @@
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta name="keywords"
+    content="Harry Liao, Xian-Hao Liao, Multimedia Designer, UX Design, Visual Design, Motion Graphics, 3D Modeling, MassArt DMI">
+  <meta name="author" content="Xian-Hao (Harry) Liao">
+  <meta name="robots" content="index, follow">
+  <title>廖先皓 (Harry Liao) | 視覺設計師、多媒體設計作品集</title>
+
+  <link rel="alternate" hreflang="x-default" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="en" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://harryliao.design/zh/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://harryliao.design/">
+  <meta property="og:title" content="廖先皓 (Harry Liao) | 視覺設計師作品集">
+  <meta property="og:description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta property="og:image" content="https://harryliao.design/images/TB.webp">
+  <meta property="og:site_name" content="Harry Liao Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://harryliao.design/">
+  <meta name="twitter:title" content="廖先皓 (Harry Liao) | 視覺設計師作品集">
+  <meta name="twitter:description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta name="twitter:image" content="https://harryliao.design/images/TB.webp">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xian-Hao (Harry) Liao",
+    "url": "https://harryliao.design/",
+    "jobTitle": "Multimedia Designer",
+    "alumniOf": "Massachusetts College of Art and Design",
+    "sameAs": [
+      "https://www.linkedin.com/in/xian-hao-liao/",
+      "https://www.behance.net/xianhaoliao-design",
+      "https://www.instagram.com/xianhaoliao.design/",
+      "https://www.youtube.com/@HarryLiaoVideo"
+    ]
+  }
+  </script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="../../icon.ico" type="icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="shortcut icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="bookmark">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="preload" as="style" href="../../assets/css/about.css">
+  <link rel="stylesheet" href="../../assets/css/about.css">
+  <link rel="preload" as="style" href="../../assets/css/work.css">
+  <link rel="stylesheet" href="../../assets/css/work.css">
+  <link rel="preload" as="style" href="../../assets/css/contact.css">
+  <link rel="stylesheet" href="../../assets/css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
+  <link rel="preload" as="image" href="../../images/xianhaoliao.webp">
+  <link rel="preload" as="image" href="../../images/TB.webp">
+  <link rel="preload" as="image" href="../../images/YB.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="../../assets/js/i18n.js" defer></script>
+  <script src="../../assets/js/navbar.js" defer></script>
+  <script src="../../assets/js/about.js" defer></script>
+  <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/feature.js" defer></script>
+  <script src="../../assets/js/lazy-images.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="../../assets/js/animations.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Black+Ops+One&family=League+Spartan:wght@700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <script>
+    // If the URL has an SPA fragment, hide the main content immediately
+    // to avoid flashing the index content before the SPA fragment loads.
+    try {
+      const path = location.pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+      const isZh = path.startsWith('zh');
+      const page = isZh ? path.replace(/^zh\/?/, '') : path;
+      if (/^(about|work|contact)$/i.test(page)) {
+        document.documentElement.classList.add('spa-loading');
+        document.body.classList.add('spa-loading');
+      }
+    } catch (e) { }
+  </script>
+
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="/zh/" class="main-menu-link active" data-menu-key="home">• HOME</a>
+      <a href="/zh/about" class="main-menu-link" data-menu-key="about">ABOUT</a>
+      <a href="/zh/work" class="main-menu-link" data-menu-key="work">WORK</a>
+      <a href="/zh/contact" class="main-menu-link" data-menu-key="contact">CONTACT</a>
+    </div>
+
+    <div class="nav-center">
+      <a href="/zh/" class="logo-link">HARRY LIAO</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer"
+        class="social-link">Be</a>
+      <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer"
+        class="social-link">in</a>
+      <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer"
+        class="social-link">YT</a>
+      <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer"
+        class="social-link">IG</a>
+      <button class="lang-toggle desktop-lang-toggle" type="button" data-lang-toggle><span
+          class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+          class="lang-option lang-zh">中</span></button>
+    </div>
+
+    <button class="mobile-menu-toggle" id="openMenuBtn" aria-label="Open menu">☰</button>
+    <button class="lang-toggle mobile-lang-toggle" type="button" data-lang-toggle><span
+        class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+        class="lang-option lang-zh">中</span></button>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="menu-header">
+      <a href="/zh/" class="logo-link">HARRY LIAO</a>
+      <div class="menu-header-actions">
+        <button class="lang-toggle overlay-lang-toggle" type="button" data-lang-toggle><span
+            class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+            class="lang-option lang-zh">中</span></button>
+        <button class="close-btn" id="closeMenuBtn" aria-label="Close menu">♦ CLOSE ♦</button>
+      </div>
+    </div>
+
+    <div class="menu-divider"></div>
+
+    <nav class="mobile-nav-links">
+      <a href="/zh/" class="mobile-link active" data-menu-key="home">HOME</a>
+      <a href="/zh/about" class="mobile-link" data-menu-key="about">ABOUT</a>
+      <a href="/zh/work" class="mobile-link" data-menu-key="work">WORK</a>
+      <a href="/zh/contact" class="mobile-link" data-menu-key="contact">CONTACT</a>
+    </nav>
+
+    <div class="menu-divider"></div>
+
+    <div class="mobile-socials">
+      <span class="arrows">&gt;&gt;</span>
+      <div class="social-icons">
+        <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer">Be</a>
+        <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer">YT</a>
+        <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer">IG</a>
+      </div>
+      <span class="arrows">&lt;&lt;</span>
+    </div>
+
+    <div class="mobile-footer-text">// 設計下一個未來。</div>
+  </div>
+
+  <div id="mainContent">
+    <section class="hero-section">
+      <div class="video-container media-fallback-host">
+        <iframe id="hero-video" class="hero-video" data-fallback="../../images/Work/Token_of_love.webp"
+          src="https://player.vimeo.com/video/1197993637?background=1&autoplay=1&loop=1&muted=1&byline=0&title=0&portrait=0"
+          frameborder="0" allow="autoplay; fullscreen" allowfullscreen tabindex="-1" aria-hidden="true"></iframe>
+        <div class="video-overlay"></div>
+      </div>
+
+      <h1 class="hero-title">HARRY LIAO</h1>
+
+      <div class="hero-bottom-info">
+        <div class="bottom-left">// 設計下一個未來。</div>
+        <div class="bottom-right">▼ 向下探索</div>
+      </div>
+    </section>
+
+    <div class="solid-cover description-strip">
+      <div class="description-content">
+        <p>♦ Harry Liao excels at bridging creative strategy with sci-fi technology, possessing extensive experience in
+          UX design, visual design, 3D modeling, motion graphics, and web development. ♦</p>
+      </div>
+    </div>
+
+    <div class="simple-media media-fallback-host">
+      <video class="simple-video" data-fallback="../../images/Gate.webp" autoplay muted loop playsinline loading="lazy"
+        tabindex="-1" aria-hidden="true">
+        <source src="../../videos/Gate%20Travel.mp4" type="video/mp4">
+      </video>
+      <div class="absolute-content project-info">
+        <h2 class="project-title">GATE</h2>
+        <p class="project-desc">GATE TRAVEL IS A NEW GATE PRODUCT LAUNCHED IN 2025, BUILT FOR FAST, SEAMLESS BOOKINGS
+          WITH A CRYPTO-FIRST PAYMENT EXPERIENCE.</p>
+        <a href="/zh/work/gate-mg.html" target="_blank" rel="noopener noreferrer" class="view-project">查看專案</a>
+      </div>
+    </div>
+
+    <div class="simple-media media-fallback-host">
+      <video class="simple-video" data-fallback="../../images/Work/Cocook App Design.webp" autoplay muted loop playsinline
+        loading="lazy" tabindex="-1" aria-hidden="true">
+        <source src="../../videos/Cocooks-demo.mp4" type="video/mp4">
+      </video>
+      <div class="absolute-content project-info">
+        <h2 class="project-title">COCOOK</h2>
+        <p class="project-desc">COCOOK IS A MOBILE APP THAT HELPS YOUNG ADULTS BUILD HEALTHIER EATING HABITS THROUGH
+          ACCESSIBLE NUTRITION EDUCATION, RECIPES WITH FACTS, STEP-BY-STEP GUIDANCE, AND SHAREABLE COOKING SPACES.</p>
+        <a href="/zh/work/cocook-app.html" target="_blank" rel="noopener noreferrer" class="view-project">查看專案</a>
+      </div>
+    </div>
+
+    <div class="simple-media media-fallback-host">
+      <video class="simple-video" data-fallback="../../images/Work/For-U_cover.webp" autoplay muted loop playsinline
+        loading="lazy" tabindex="-1" aria-hidden="true">
+        <source src="../../videos/Reno_Gordon_For-U_S.mp4" type="video/mp4">
+      </video>
+      <div class="absolute-content project-info">
+        <h2 class="project-title">FOR-U</h2>
+        <p class="project-desc">FOR-U is a house single created by Harry Liao in collaboration with rising singer Luna.
+          The story explores a young girl's inner world and aims to deliver an energetic listening experience.</p>
+        <a href="/zh/work/for-u.html" target="_blank" rel="noopener noreferrer" class="view-project">查看專案</a>
+      </div>
+    </div>
+
+    <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer"
+      class="portfolio-button">
+      <span class="diamond">◆</span>
+      <span class="portfolio-button-label">看完整作品集</span>
+      <span class="diamond">◆</span>
+    </a>
+
+    <section class="featured-clients-section">
+
+      <div class="clients-header">
+        <h2 class="title-solid">精選</h2>
+        <h2 class="title-outline">客戶</h2>
+      </div>
+
+
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="clientTrack">
+          <div class="client-item" data-client="GATE">
+            <div class="crosshair top-left"></div>
+            <div class="crosshair top-right"></div>
+            <div class="crosshair bottom-left"></div>
+            <div class="crosshair bottom-right"></div>
+
+            <div class="logo-placeholder">Gate</div>
+            <div class="hover-text">&gt;&gt; GATE &lt;&lt;</div>
+          </div>
+
+          <div class="client-item" data-client="BJS">
+            <div class="crosshair top-left"></div>
+            <div class="crosshair top-right"></div>
+            <div class="crosshair bottom-left"></div>
+            <div class="crosshair bottom-right"></div>
+            <div class="logo-placeholder">BJS</div>
+            <div class="hover-text">&gt;&gt; BJS &lt;&lt;</div>
+          </div>
+
+          <div class="client-item" data-client="COCOOKS">
+            <div class="crosshair top-left"></div>
+            <div class="crosshair top-right"></div>
+            <div class="crosshair bottom-left"></div>
+            <div class="crosshair bottom-right"></div>
+            <div class="logo-placeholder">Cocook</div>
+            <div class="hover-text">&gt;&gt; COCOOK &lt;&lt;</div>
+          </div>
+
+          <div class="client-item" data-client="MIT">
+            <div class="crosshair top-left"></div>
+            <div class="crosshair top-right"></div>
+            <div class="crosshair bottom-left"></div>
+            <div class="crosshair bottom-right"></div>
+            <div class="logo-placeholder">MIT</div>
+            <div class="hover-text">&gt;&gt; MIT &lt;&lt;</div>
+          </div>
+
+          <div class="client-item" data-client="MASSART">
+            <div class="crosshair top-left"></div>
+            <div class="crosshair top-right"></div>
+            <div class="crosshair bottom-left"></div>
+            <div class="crosshair bottom-right"></div>
+            <div class="logo-placeholder">MassArt</div>
+            <div class="hover-text">&gt;&gt; MASSART &lt;&lt;</div>
+          </div>
+
+          <div class="client-item" data-client="ABC-DESIGN">
+            <div class="crosshair top-left"></div>
+            <div class="crosshair top-right"></div>
+            <div class="crosshair bottom-left"></div>
+            <div class="crosshair bottom-right"></div>
+            <div class="logo-placeholder">ABC Design</div>
+            <div class="hover-text">&gt;&gt; ABC DESIGN &lt;&lt;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button id="clientPrevBtn" class="ctrl-btn">&laquo;</button>
+        <button id="clientNextBtn" class="ctrl-btn">&raquo;</button>
+      </div>
+
+    </section>
+
+
+    <section class="career-section">
+      <div class="clients-header">
+        <h2 class="title-solid">經歷</h2>
+        <h2 class="title-outline">亮點</h2>
+      </div>
+
+      <div class="career-content">
+
+        <div class="career-sidebar">
+          <div class="sidebar-label">[ 視覺設計經歷 ]</div>
+        </div>
+
+        <div class="accordion-container" id="careerAccordion">
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">GATE.COM: REDBULL F1 PARTNERSHIP EXPERIENCE (2025)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">XIAN-HAO EXECUTED HIGH-FIDELITY UX DESIGN FOR THE REDBULL X GATE PARTNERSHIP AND
+                GLOBAL EVENT PAGES...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  XIAN-HAO EXECUTED HIGH-FIDELITY UX DESIGN FOR THE REDBULL X GATE PARTNERSHIP AND GLOBAL EVENT PAGES.
+                  HIS WORK ENSURED A SEAMLESS INTEGRATION OF WEB3 FUNCTIONALITY WITH TOP-TIER RACING BRANDING,
+                  MAINTAINING RIGOROUS DELIVERY STANDARDS ACROSS MULTIPLE AD CAMPAIGNS.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">BOSTON UNIVERSITY: DESIGN STRATEGY & PEDAGOGY (2025)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">AS AN ADJUNCT PROFESSOR, HARRY LED A COHORT OF 30+ STUDENTS IN THE DESIGN
+                STRATEGY & SOFTWARE COURSE...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  AS AN ADJUNCT PROFESSOR, HARRY LED A COHORT OF 30+ STUDENTS IN THE "DESIGN STRATEGY & SOFTWARE" COURSE.
+                  HE MENTORED EMERGING TALENT IN MERGING CREATIVE STRATEGY WITH ADOBE CREATIVE SOFTWARE, BRIDGING THE
+                  GAP BETWEEN THEORETICAL DESIGN AND TECHNICAL EXECUTION.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">THE UPS STORE: REVENUE & PRINT OPTIMIZATION <span style="white-space: nowrap">(2024-2025)</span></span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">SERVED AS A DIGITAL PRINT SPECIALIST, REVOLUTIONIZING THE STORE'S OPERATIONAL
+                EFFICIENCY AND CUSTOMER INTERFACE...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  SERVED AS A DIGITAL PRINT SPECIALIST, REVOLUTIONIZING THE STORE'S OPERATIONAL EFFICIENCY AND CUSTOMER
+                  INTERFACE. THROUGH ENHANCED PRINT SERVICES AND GRAPHIC DESIGN INTEGRATION, HE DROVE A 25% INCREASE IN
+                  MONTHLY REVENUE, ELEVATING THE STORE'S REGIONAL RANKING TO NO. 5 IN MASSACHUSETTS.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">MIT MEDIA LAB: HUMAN-MACHINE INTERACTION RESEARCH <span style="white-space: nowrap">(2023-2024)</span></span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">ENGAGED IN ADVANCED TRAINING AT THE MIT MEDIA LAB, CONTRIBUTING TO HUMAN 2.0 AND
+                NEURAFUTURES RESEARCH...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  ENGAGED IN ADVANCED TRAINING AT THE MIT MEDIA LAB, CONTRIBUTING TO THE "HUMAN 2.0" PROSTHETICS
+                  HARDWARE PROJECT AND "NEURAFUTURES" RESEARCH. HARRY EXPLORED THE INTERSECTIONS OF GENAI, BCIS, AND
+                  PROSTHETICS, TRANSLATING COMPLEX SCIENTIFIC RESEARCH INTO TANGIBLE DESIGN CONCEPTS.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">BJ'S WHOLESALE CLUB: MULTIMEDIA CAMPAIGN DESIGN (2023)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">DEVELOPED DYNAMIC VISUAL CONTENT FOR NATIONAL PROJECTS, INCLUDING NASCAR AND
+                NATIONALS PARK CAMPAIGNS...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  DEVELOPED DYNAMIC VISUAL CONTENT FOR NATIONAL PROJECTS, INCLUDING NASCAR AND NATIONALS PARK CAMPAIGNS.
+                  HIS ROLE INVOLVED CREATING ENGAGING SOCIAL MOTION GRAPHICS AND REDESIGNING DIGITAL CHANNEL VISUALS TO
+                  ENSURE A COHESIVE BRAND NARRATIVE.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">MASSART: DYNAMIC MEDIA & WEB DESIGN <span style="white-space: nowrap">(2022-2024)</span></span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">OPTIMIZED THE ARCHITECTURAL PERFORMANCE OF THE DYNAMIC MEDIA INSTITUTE'S WEB
+                PLATFORMS...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  OPTIMIZED THE ARCHITECTURAL PERFORMANCE OF THE DYNAMIC MEDIA INSTITUTE'S WEB PLATFORMS. BY
+                  STREAMLINING IMAGE DATA AND MANAGING COMPLEX THESIS CONTENT, HE SIGNIFICANTLY IMPROVED LOAD TIMES AND
+                  USER ENGAGEMENT WITHIN THE ACADEMIC COMMUNITY.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">ABC DESIGN: MULTIDISCIPLINARY GRAPHIC SYSTEMS <span style="white-space: nowrap">(2021-2022)</span></span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">OPERATING AS A CORE GRAPHIC DESIGNER IN TAICHUNG, HARRY DEVELOPED COMPREHENSIVE
+                VISUAL IDENTITY SYSTEMS...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  OPERATING AS A CORE GRAPHIC DESIGNER IN TAICHUNG, HARRY DEVELOPED COMPREHENSIVE VISUAL IDENTITY
+                  SYSTEMS AND HIGH-END GRAPHIC SOLUTIONS. HIS WORK AT ABC DESIGN FOCUSED ON TRANSLATING COMPLEX BRAND
+                  PHILOSOPHIES INTO COMPELLING VISUAL NARRATIVES, ENSURING COHESION ACROSS BOTH DIGITAL AND PHYSICAL
+                  TOUCHPOINTS.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="career-content career-row">
+        <div class="career-sidebar">
+          <div class="sidebar-label">[ 專案 ]</div>
+        </div>
+
+        <div class="accordion-container">
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">COCOOKS (2025)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">HARRY LED THE VISUAL AND UX STRATEGY FOR COCOOKS, CRAFTING AN INTUITIVE DIGITAL
+                PLATFORM...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  HARRY LED THE VISUAL AND UX STRATEGY FOR COCOOKS, CRAFTING AN INTUITIVE DIGITAL PLATFORM THAT BRIDGES
+                  CULINARY ARTS WITH COMMUNITY ENGAGEMENT. THE PROJECT SHOWCASES HIS ABILITY TO BLEND MINIMALIST
+                  INTERFACE DESIGN WITH SEAMLESS USER FLOWS AND HIGH-FIDELITY VISUALS.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">HER WAY HOME | RECITAL VISUAL (2024)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">HARRY DEVELOPED DYNAMIC MOTION GRAPHICS AND C4D RENDERINGS FOR THE MUSICAL
+                RECITAL...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  HARRY DEVELOPED DYNAMIC MOTION GRAPHICS AND C4D RENDERINGS FOR THE "HER WAY HOME" MUSICAL RECITAL.
+                  SERVING AS THE LEAD VISUAL ARTIST, HE CRAFTED AN IMMERSIVE VISUAL NARRATIVE THAT ELEVATED THE LIVE
+                  PERFORMANCE, PERFECTLY SYNCHRONIZING ADVANCED DIGITAL MEDIA WITH ACOUSTIC STORYTELLING.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">FRESH MEDIA EXHIBITION: BOSTON CYBERARTS (2024)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">FEATURED AS A SELECTED ARTIST FROM MASSART'S DYNAMIC MEDIA INSTITUTE, HARRY EXECUTED INTERACTIVE COMPUTATIONAL MEDIA AT THE RENOWNED BOSTON CYBERARTS GALLERY. HIS EXHIBITED WORK INTEGRATED TIME-BASED DIGITAL AESTHETICS WITH EXPERIENTIAL DESIGN, DEMONSTRATING A FORWARD-THINKING APPROACH TO AUDIO-VISUAL AND SENSOR-DRIVEN ART.</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  FEATURED AS A SELECTED ARTIST FROM MASSART'S DYNAMIC MEDIA INSTITUTE, HARRY EXECUTED INTERACTIVE
+                  COMPUTATIONAL MEDIA AT THE RENOWNED BOSTON CYBERARTS GALLERY. HIS EXHIBITED WORK INTEGRATED TIME-BASED
+                  DIGITAL AESTHETICS WITH EXPERIENTIAL DESIGN, DEMONSTRATING A FORWARD-THINKING APPROACH TO AUDIO-VISUAL
+                  AND SENSOR-DRIVEN ART.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">ARCCSRL ROBOTIC LIMB PROJECT (2023)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">CONTRIBUTING TO THE ARCCSRL INITIATIVE AT THE MIT MEDIA LAB, HARRY EXPLORED
+                HUMAN-COMPUTER INTERACTION...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  CONTRIBUTING TO THE ARCCSRL INITIATIVE AT THE MIT MEDIA LAB, HARRY EXPLORED THE INTERSECTION OF
+                  HUMAN-COMPUTER INTERACTION AND PROSTHETICS HARDWARE. Built a visually-assisted GUI on the existing HoloLens for a novel continuous robotic limb, enabling testers to achieve advanced and intuitive control through eye-gaze tracking and voice commands.<br><br>Transformed complex experimental data collected from user testing into intuitive data visualizations. The research and testing outcomes were ultimately exhibited at the Harvard Innovation Labs and MIT Media Lab.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="career-content career-row">
+        <div class="career-sidebar">
+          <div class="sidebar-label">[ 出版與報導 ]</div>
+        </div>
+
+        <div class="accordion-container">
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">YOUR BRAIN ON CHATGPT (MIT) (2025)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">IN THIS EXCLUSIVE COVERAGE OF THE NEURAFUTURES RESEARCH, HARRY SHARED HIS
+                EXPERTISE ON COGNITIVE DEBT...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  IN THIS EXCLUSIVE COVERAGE OF THE NEURAFUTURES RESEARCH, HARRY SHARED HIS EXPERTISE ON COGNITIVE DEBT
+                  AND GENERATIVE AI CAPABILITIES. THE PIECE DETAILED HIS CONTRIBUTIONS AT THE MIT MEDIA LAB, EMPHASIZING
+                  HIS VISION ON THE EVOLVING SYMBIOSIS BETWEEN HUMAN COGNITION AND ARTIFICIAL INTELLIGENCE.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="item-title-col">
+              <span class="bullet">■</span>
+              <span class="title-text">DREAM REALITY: THESIS BOOK & EXPERIENTIAL DESIGN (2024)</span>
+            </div>
+            <div class="item-content-col">
+              <div class="preview-text">DEVELOPED AT THE DYNAMIC MEDIA INSTITUTE, THIS MULTIDISCIPLINARY THESIS EXPLORES
+                LUCID DREAMING...</div>
+              <div class="full-text-wrapper">
+                <div class="full-text">
+                  DEVELOPED AT THE DYNAMIC MEDIA INSTITUTE, THIS MULTIDISCIPLINARY THESIS EXPLORES THE PROFOUND
+                  PHENOMENON OF LUCID DREAMING. THROUGH A SYNERGY OF THESIS WRITING, ART INSTALLATIONS, AND INTERACTIVE
+                  DESIGN, HARRY TRANSLATED CONSCIOUS DREAM NARRATIVES INTO TANGIBLE EXPERIENCES, CHALLENGING USERS TO
+                  EXAMINE THE BLURRED BOUNDARIES BETWEEN INNER PERCEPTION AND AWAKE REALITY.
+                </div>
+              </div>
+            </div>
+            <div class="item-icon-col">
+              <div class="icon-box"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section id="impact" class="impact-section">
+      <div class="clients-header">
+        <h2 class="title-solid">廖先皓 Harry </h2>
+        <h2 class="title-outline">影響世界</h2>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="card-title"><span class="bullet">◾</span> GLOBAL PROJECTS</div>
+          <p class="card-desc">作為內部視覺設計師，主導高保真 Web3 與全球品牌體驗。</p>
+          <div class="card-number">
+            <span class="counter" data-target="30">0</span><span class="symbol">+</span>
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <div class="card-title"><span class="bullet">◾</span> EMERGING TECH</div>
+          <p class="card-desc">參與實驗室計畫，於 MIT 開發原型與研究。</p>
+          <div class="card-number">
+            <span class="counter" data-target="3">0</span>
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <div class="card-title"><span class="bullet">◾</span> MENTORSHIP</div>
+          <p class="card-desc">指導 30+ 學生，將創意策略轉為業界實作。
+          </p>
+          <div class="card-number">
+            <span class="counter" data-target="100">0</span><span class="symbol">+</span>
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <div class="card-title"><span class="bullet">◾</span> IMMERSIVE EVENTS</div>
+          <p class="card-desc">策展 10+ 沉浸式體驗，整合空間與視覺展演。</p>
+          <div class="card-number">
+            <span class="counter" data-target="10">0</span><span class="symbol">+</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="parallax-section">
+      <div class="parallax-overlay"></div>
+
+      <div class="parallax-content">
+
+        <div class="small-label">[ Harry 的精選經歷 ]</div>
+
+        <h2 class="parallax-title">
+          科技與人文<br>敘事
+        </h2>
+
+        <div class="tech-text-box">
+          <p>
+            從 Web3 到學術研究，Harry 的作品把靜態畫面變成可沉浸的數位世界。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="clients-header">
+      <h2 class="title-solid">出版 <br> 報導</h2>
+    </div>
+
+    <section class="portfolio-section">
+
+      <div class="left-panel">
+        <button id="portfolioPrevBtn" class="nav-btn" aria-label="Previous portfolio item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <div class="image-container">
+          <a id="artwork-link" href="/work/thesisbook.html" target="_blank" rel="noopener noreferrer" style="display:block;">
+            <img id="artwork-img" src="../../images/TB.webp" alt="Dream Reality MFA Thesis Book by Harry Liao" decoding="async"
+              fetchpriority="high">
+          </a>
+        </div>
+
+        <button id="portfolioNextBtn" class="nav-btn" aria-label="Next portfolio item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="right-panel">
+        <div class="crosshair top-left"></div>
+        <div class="crosshair top-right"></div>
+        <div class="crosshair bottom-left"></div>
+        <div class="crosshair bottom-right"></div>
+
+        <div class="panel-header">
+          <div class="edition-tag" id="edition-text">/ SOFTCOVER EDITION</div>
+          <div class="indicator-container" id="indicator-container"></div>
+        </div>
+
+        <h3 class="title" id="title-text">
+          <a href="https://www.behance.net/gallery/202521069/MFA-Thesis-Book-Slides-Dream-Reality" target="_blank"
+            rel="noopener noreferrer">DREAM REALITY</a>
+        </h3>
+        <p class="description" id="desc-text"></p>
+
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">SIZE</span>
+            <span class="meta-value" id="meta-dim">X mm</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">PAGES</span>
+            <span class="meta-value" id="meta-pages">X pages</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">LANGUAGE</span>
+            <span class="meta-value" id="meta-lang">ENGLISH</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">PUBLISHER</span>
+            <span class="meta-value" id="meta-pub">X</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="gallery-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="/zh/work/cocook-app.html" target="_blank" rel="noopener noreferrer" class="slide-content">
+              <img src="../../images/Events/03.webp" alt="Interactive Event Showcase 03 by Harry Liao" decoding="async">
+              <div class="slide-info"><span class="credit-text">CREDIT TO: Harry Liao</span></div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/zh/work/for-u.html" target="_blank" rel="noopener noreferrer" class="slide-content">
+              <img src="../../images/Events/05.webp" alt="Interactive Event Showcase 05 by Harry Liao" decoding="async">
+              <div class="slide-info"><span class="credit-text">CREDIT TO: Harry Liao</span></div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/zh/work/gate-redbull.html" target="_blank" rel="noopener noreferrer" class="slide-content">
+              <img src="../../images/Events/02.webp" alt="Interactive Event Showcase 02 by Harry Liao" decoding="async">
+              <div class="slide-info"><span class="credit-text">CREDIT TO: Harry Liao</span></div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="/zh/work/c-cube.html" target="_blank" rel="noopener noreferrer" class="slide-content">
+              <img src="../../images/Events/04.webp" alt="Interactive Event Showcase 04 by Harry Liao" decoding="async">
+              <div class="slide-info"><span class="credit-text">CREDIT TO: Harry Liao</span></div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/zh/work/gate-redbull.html" target="_blank" rel="noopener noreferrer" class="slide-content">
+              <img src="../../images/Events/06.webp" alt="Interactive Event Showcase 06 by Harry Liao" decoding="async">
+              <div class="slide-info"><span class="credit-text">CREDIT TO: Harry Liao</span></div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/zh/work/for-u.html" target="_blank" rel="noopener noreferrer" class="slide-content">
+              <img src="../../images/Events/01.webp" alt="Interactive Event Showcase 01 by Harry Liao" decoding="async">
+              <div class="slide-info"><span class="credit-text">CREDIT TO: Harry Liao</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-nav-btn custom-nav-prev">
+        <svg class="arrow-icon" viewBox="0 0 24 24">
+          <path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z" />
+          <path d="M22.67 3.87L20.9 2.1 11 12l9.9 9.9 1.77-1.77L14.54 12z" />
+        </svg>
+      </div>
+      <div class="custom-nav-btn custom-nav-next">
+        <svg class="arrow-icon" viewBox="0 0 24 24">
+          <path d="M12.33 3.87L14.1 2.1 24 12l-9.9 9.9-1.77-1.77L20.46 12z" />
+          <path d="M1.33 3.87L3.1 2.1 13 12l-9.9 9.9-1.77-1.77L9.46 12z" />
+        </svg>
+      </div>
+    </div>
+
+    <section class="learn-more-section">
+      <div class="learn-more-inner">
+        <h2 class="learn-more-title">Learn More About Harry.</h2>
+        <a href="/zh/about" class="learn-more-btn" data-spa-target="about">
+          <span>Click Here</span>
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="bottom-showcase-section">
+      <div class="tech-divider top-divider"></div>
+
+      <div class="image-strip">
+        <a href="/zh/work/gate-redbull.html" target="_blank" rel="noopener noreferrer" class="strip-item"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="../../images/Events/02.webp" alt="Event Experience Design Work 1 by Harry Liao" decoding="async"></a>
+        <a href="/zh/work/gate-mg.html" target="_blank" rel="noopener noreferrer" class="strip-item"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="../../images/Gate.webp" alt="Event Experience Design Work 2 by Harry Liao" decoding="async"></a>
+        <a href="/zh/work/for-u.html" target="_blank" rel="noopener noreferrer" class="strip-item"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="../../images/Events/01.webp" alt="Event Experience Design Work 3 by Harry Liao" decoding="async"></a>
+        <a href="/zh/work/cocook-app.html" target="_blank" rel="noopener noreferrer" class="strip-item"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="../../images/Events/03.webp" alt="Event Experience Design Work 4 by Harry Liao" decoding="async"></a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="tech-divider bottom-divider"></div>
+
+    <div class="giant-name-container">
+      <h1 class="giant-name">HARRY LIAO</h1>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-left">©2026 ALL RIGHTS RESERVED.</div>
+      <div class="footer-right">
+        <!-- email_off --><a href="mailto:harryxliao@gmail.com">HARRYXLIAO@GMAIL.COM</a><!-- /email_off -->
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,413 @@
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta name="keywords"
+    content="Harry Liao, Xian-Hao Liao, Multimedia Designer, UX Design, Visual Design, Motion Graphics, 3D Modeling, MassArt DMI">
+  <meta name="author" content="Xian-Hao (Harry) Liao">
+  <meta name="robots" content="index, follow">
+  <title>廖先皓 (Harry Liao) | 視覺設計師、多媒體設計作品集</title>
+
+  <link rel="alternate" hreflang="x-default" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="en" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://harryliao.design/zh/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://harryliao.design/">
+  <meta property="og:title" content="廖先皓 (Harry Liao) | 視覺設計師作品集">
+  <meta property="og:description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta property="og:image" content="https://harryliao.design/images/TB.webp">
+  <meta property="og:site_name" content="Harry Liao Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://harryliao.design/">
+  <meta name="twitter:title" content="廖先皓 (Harry Liao) | 視覺設計師作品集">
+  <meta name="twitter:description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta name="twitter:image" content="https://harryliao.design/images/TB.webp">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xian-Hao (Harry) Liao",
+    "url": "https://harryliao.design/",
+    "jobTitle": "Multimedia Designer",
+    "alumniOf": "Massachusetts College of Art and Design",
+    "sameAs": [
+      "https://www.linkedin.com/in/xian-hao-liao/",
+      "https://www.behance.net/xianhaoliao-design",
+      "https://www.instagram.com/xianhaoliao.design/",
+      "https://www.youtube.com/@HarryLiaoVideo"
+    ]
+  }
+  </script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="../../icon.ico" type="icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="shortcut icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="bookmark">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="preload" as="style" href="../../assets/css/about.css">
+  <link rel="stylesheet" href="../../assets/css/about.css">
+  <link rel="preload" as="style" href="../../assets/css/work.css">
+  <link rel="stylesheet" href="../../assets/css/work.css">
+  <link rel="preload" as="style" href="../../assets/css/contact.css">
+  <link rel="stylesheet" href="../../assets/css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
+  <link rel="preload" as="image" href="../../images/xianhaoliao.webp">
+  <link rel="preload" as="image" href="../../images/TB.webp">
+  <link rel="preload" as="image" href="../../images/YB.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="../../assets/js/i18n.js" defer></script>
+  <script src="../../assets/js/navbar.js" defer></script>
+  <script src="../../assets/js/about.js" defer></script>
+  <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/feature.js" defer></script>
+  <script src="../../assets/js/lazy-images.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="../../assets/js/animations.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Black+Ops+One&family=League+Spartan:wght@700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <script>
+    // If the URL has an SPA fragment, hide the main content immediately
+    // to avoid flashing the index content before the SPA fragment loads.
+    try {
+      const path = location.pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+      const isZh = path.startsWith('zh');
+      const page = isZh ? path.replace(/^zh\/?/, '') : path;
+      if (/^(about|work|contact)$/i.test(page)) {
+        document.documentElement.classList.add('spa-loading');
+        document.body.classList.add('spa-loading');
+      }
+    } catch (e) { }
+  </script>
+
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="/zh/" class="main-menu-link active" data-menu-key="home">• HOME</a>
+      <a href="/zh/about" class="main-menu-link" data-menu-key="about">ABOUT</a>
+      <a href="/zh/work" class="main-menu-link" data-menu-key="work">WORK</a>
+      <a href="/zh/contact" class="main-menu-link" data-menu-key="contact">CONTACT</a>
+    </div>
+
+    <div class="nav-center">
+      <a href="/zh/" class="logo-link">HARRY LIAO</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer"
+        class="social-link">Be</a>
+      <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer"
+        class="social-link">in</a>
+      <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer"
+        class="social-link">YT</a>
+      <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer"
+        class="social-link">IG</a>
+      <button class="lang-toggle desktop-lang-toggle" type="button" data-lang-toggle><span
+          class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+          class="lang-option lang-zh">中</span></button>
+    </div>
+
+    <button class="mobile-menu-toggle" id="openMenuBtn" aria-label="Open menu">☰</button>
+    <button class="lang-toggle mobile-lang-toggle" type="button" data-lang-toggle><span
+        class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+        class="lang-option lang-zh">中</span></button>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="menu-header">
+      <a href="/zh/" class="logo-link">HARRY LIAO</a>
+      <div class="menu-header-actions">
+        <button class="lang-toggle overlay-lang-toggle" type="button" data-lang-toggle><span
+            class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+            class="lang-option lang-zh">中</span></button>
+        <button class="close-btn" id="closeMenuBtn" aria-label="Close menu">♦ CLOSE ♦</button>
+      </div>
+    </div>
+
+    <div class="menu-divider"></div>
+
+    <nav class="mobile-nav-links">
+      <a href="/zh/" class="mobile-link active" data-menu-key="home">HOME</a>
+      <a href="/zh/about" class="mobile-link" data-menu-key="about">ABOUT</a>
+      <a href="/zh/work" class="mobile-link" data-menu-key="work">WORK</a>
+      <a href="/zh/contact" class="mobile-link" data-menu-key="contact">CONTACT</a>
+    </nav>
+
+    <div class="menu-divider"></div>
+
+    <div class="mobile-socials">
+      <span class="arrows">&gt;&gt;</span>
+      <div class="social-icons">
+        <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer">Be</a>
+        <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer">YT</a>
+        <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer">IG</a>
+      </div>
+      <span class="arrows">&lt;&lt;</span>
+    </div>
+
+    <div class="mobile-footer-text">// 設計下一個未來。</div>
+  </div>
+
+  <div id="mainContent">
+<link rel="stylesheet" href="../../assets/css/project-detail.css">
+
+<div class="gate-mg-page">
+  <div class="gate-mg-container">
+
+    <!-- Project Header -->
+    <header class="project-header">
+      <div class="project-title-area">
+        <h1>Gate.com Motion<br>Graphics</h1>
+        <p class="subtitle" data-i18n-zh="Gate.com 品牌的動態視覺設計專案。結合科幻科技美學與精緻的動態圖形，為次世代加密支付與航行體驗打造視覺基礎。">
+          Gate.com Motion Graphics branding project. Merging sci-fi aesthetics with sophisticated motion design to build
+          the visual foundation for next-generation crypto payment and navigation experiences.
+        </p>
+      </div>
+
+      <!-- Metadata -->
+      <div class="project-meta-table">
+        <div class="meta-row">
+          <span class="meta-label" data-i18n-zh="類別">Medium</span>
+          <span class="meta-value" data-i18n-zh="動態設計 / 3D">Motion Graphics / 3D</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label" data-i18n-zh="年份">Date</span>
+          <span class="meta-value">2025</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label" data-i18n-zh="載體">Medium</span>
+          <span class="meta-value" data-i18n-zh="數位內容">Digital Content</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label" data-i18n-zh="角色">Role</span>
+          <span class="meta-value" data-i18n-zh="多媒體設計師">Multimedia Designer</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Video 1: Main Feature Video -->
+    <section class="media-block full-width">
+      <div class="iframe-wrapper">
+        <iframe
+          src="https://player.vimeo.com/video/1148825814?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+          allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="block-caption">
+        <span data-i18n-zh="主打形象影片 - 01">Featured Video - 01</span>
+        <span>Vimeo 1148825814</span>
+      </div>
+    </section>
+
+    <!-- Key Contributions Section -->
+    <section class="contributions-section">
+      <div class="contributions-header">
+        <p class="contributions-kicker" data-i18n-zh="核心貢獻">Key Contributions</p>
+        <h2 data-i18n-zh="獨立主導，跨域協作，驅動創新">Solo-Led. Cross-Functional. Impact-Driven.</h2>
+      </div>
+
+      <div class="contributions-grid">
+
+        <!-- Contribution 1 -->
+        <div class="contribution-card">
+          <div class="contribution-number">01</div>
+          <div class="contribution-content">
+            <h4 data-i18n-zh="社群動態視覺設計">Social Motion Design</h4>
+            <p data-i18n-zh="獨立完成四支高質量廣告行銷活動的社群動態視覺設計，融合品牌調性與動態敘事，驅動社群互動與品牌曝光。">
+              Independently designed four high-quality social motion visuals for advertising campaigns,
+              blending brand identity with dynamic storytelling to drive social engagement and brand awareness.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contribution 2 -->
+        <div class="contribution-card">
+          <div class="contribution-number">02</div>
+          <div class="contribution-content">
+            <h4 data-i18n-zh="跨部門高效協作">Cross-Functional Collaboration</h4>
+            <p data-i18n-zh="跨部門協作視覺與影片團隊，快速迭代確保設計方向與商業目標對齊，並在時間有限的條件下準時完成多項高壓、高規格的任務。">
+              Cross-collaborated with visual and video teams, rapidly iterating to align creative direction
+              with business goals — delivering multiple high-pressure, high-spec projects on time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contribution 3 -->
+        <div class="contribution-card">
+          <div class="contribution-number">03</div>
+          <div class="contribution-content">
+            <h4 data-i18n-zh="AI 創作工具推廣講座">AI &amp; Design Tool Workshops</h4>
+            <p data-i18n-zh="主導多場 AI 與設計工具內部講座，推動團隊使用 Generative AI 於影片創意，加速創作效率與視覺產出品質。">
+              Led internal workshops on AI and design tools, driving the team's adoption of Generative AI
+              in video creative workflows to accelerate production efficiency and elevate visual output quality.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Text & Video: Side-by-Side 02 -->
+    <section class="content-grid-2col">
+      <div class="text-section">
+        <h3 data-i18n-zh="視覺識別與動態美學">Visual Identity &amp; Motion Dynamics</h3>
+        <p data-i18n-zh="在設計過程中，我們將幾何線條、三維流體和動態光效融合，創造出一種具有未來科技感、同時不失秩序與精緻度的視覺語言。這代表著 Gate 在去中心化金融環境下的穩定與高效。">
+          During the design phase, we integrated geometric paths, 3D fluidics, and kinetic light structures to create a
+          futuristic visual language. This embodies Gate's principles of stability and speed in a decentralized
+          financial landscape.
+        </p>
+      </div>
+      <div class="media-block">
+        <div class="iframe-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/1148825776?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&amp;loop=1"
+            allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="block-caption">
+          <span data-i18n-zh="動態細節 - 02">Motion Details - 02</span>
+          <span>Vimeo 1148825776</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Text & Video: Side-by-Side 03 -->
+    <section class="content-grid-2col">
+      <div class="media-block">
+        <div class="iframe-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/1148825751?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&amp;loop=1"
+            allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="block-caption">
+          <span data-i18n-zh="空間介面互動 - 03">Spatial UI Interface - 03</span>
+          <span>Vimeo 1148825751</span>
+        </div>
+      </div>
+      <div class="text-section">
+        <h3 data-i18n-zh="AI 影片新技術應用">AI-Driven Video Innovation</h3>
+        <p data-i18n-zh="在製作過程中主動導入 Generative AI 技術，將 AI 生成素材與傳統動態設計流程深度整合，大幅壓縮製作周期，同時提升視覺輸出的質量與創意多樣性，為團隊建立可複製的 AI 創作範本。">
+          Proactively integrated Generative AI into the production pipeline, merging AI-generated assets
+          with traditional motion design workflows. This dramatically reduced turnaround time while
+          elevating visual quality and creative variety — establishing repeatable AI-assisted templates
+          for the broader team.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quote Banner -->
+    <div class="quote-banner">
+      <h2 data-i18n-zh="「用科幻美學重新定義去中心化金融的視覺體驗」">"Redefining the Visual Experience of DeFi with Sci-Fi Aesthetics"</h2>
+    </div>
+
+    <!-- Tools & Process Section -->
+    <section class="tools-section">
+      <div class="tools-header">
+        <p class="contributions-kicker" data-i18n-zh="工具與流程">Tools &amp; Process</p>
+        <h2 data-i18n-zh="創作工具鏈">Creative Toolchain</h2>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-pill">After Effects</div>
+        <div class="tool-pill">Cinema 4D</div>
+        <div class="tool-pill">Premiere Pro</div>
+        <div class="tool-pill">Generative AI</div>
+        <div class="tool-pill">Figma</div>
+        <div class="tool-pill">Vimeo</div>
+      </div>
+      <p class="tools-desc" data-i18n-zh="從概念到輸出，完整掌握動態設計的製作流程：3D 建模、合成、後製到多平台輸出，並積極整合 AI 加速創作效率，在短時間內產出高質量視覺成品。">
+        From concept to delivery — mastering the full motion design pipeline: 3D modeling, compositing,
+        post-production, and multi-platform export. Actively integrating AI tools to accelerate creativity
+        and deliver high-quality visuals under tight deadlines.
+      </p>
+    </section>
+
+    <!-- Text & Video: Side-by-Side 04 -->
+    <section class="content-grid-2col">
+      <div class="text-section">
+        <h3 data-i18n-zh="極速航行與交易回饋">Hyper-Speed Navigation &amp; Transaction Feedback</h3>
+        <p data-i18n-zh="動態的回饋系統展現了每筆交易在區塊鏈網路中傳輸的流暢感。每一個微小的閃光與縮放，都經過精心調整，以帶來絕佳的感官滿足感。">
+          The feedback system displays the flow of transactions propagating through the blockchain network. Every flash
+          and scale transition is crafted to offer satisfying sensory feedback.
+        </p>
+      </div>
+      <div class="media-block">
+        <div class="iframe-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/1148825789?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&amp;loop=1"
+            allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="block-caption">
+          <span data-i18n-zh="動態模擬 - 04">Motion Simulation - 04</span>
+          <span>Vimeo 1148825789</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video 5: Full Width -->
+    <section class="media-block full-width">
+      <div class="iframe-wrapper">
+        <iframe
+          src="https://player.vimeo.com/video/1188026117?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&amp;loop=1"
+          allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="block-caption">
+        <span data-i18n-zh="完整系統展示 - 05">System Showcase - 05</span>
+        <span>Vimeo 1188026117</span>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="learn-more-section learn-more-section--spaced">
+      <div class="learn-more-inner">
+        <h2 class="learn-more-title" data-i18n-zh="期待與您合作！">Looking Forward To Speaking With You Soon!</h2>
+        <a href="/work" data-spa-target="work" class="learn-more-btn" id="gate-mgBackBtn">
+          <span data-i18n-zh="查看更多作品">See more work</span>
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</div>
+  </div>
+  <footer class="site-footer">
+    <div class="tech-divider bottom-divider"></div>
+
+    <div class="giant-name-container">
+      <h1 class="giant-name">HARRY LIAO</h1>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-left">©2026 ALL RIGHTS RESERVED.</div>
+      <div class="footer-right">
+        <!-- email_off --><a href="mailto:harryxliao@gmail.com">HARRYXLIAO@GMAIL.COM</a><!-- /email_off -->
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+</body>
+
+</html>
+

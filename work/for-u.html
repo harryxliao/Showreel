@@ -1,0 +1,360 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta name="keywords"
+    content="Harry Liao, Xian-Hao Liao, Multimedia Designer, UX Design, Visual Design, Motion Graphics, 3D Modeling, MassArt DMI">
+  <meta name="author" content="Xian-Hao (Harry) Liao">
+  <meta name="robots" content="index, follow">
+  <title>Xian-Hao (Harry) Liao | Multimedia Design Portfolio</title>
+
+  <link rel="alternate" hreflang="x-default" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="en" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://harryliao.design/zh/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://harryliao.design/">
+  <meta property="og:title" content="Xian-Hao (Harry) Liao | Design Portfolio">
+  <meta property="og:description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta property="og:image" content="https://harryliao.design/images/TB.webp">
+  <meta property="og:site_name" content="Harry Liao Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://harryliao.design/">
+  <meta name="twitter:title" content="Xian-Hao (Harry) Liao | Design Portfolio">
+  <meta name="twitter:description"
+    content="Xian-Hao (Harry) Liao is a multimedia designer specializing in visual design, UX, 3D, and interactive media. 視覺將會是未來改變世界的語言，設計師是將這門語言融合完整的人 — 廖先皓Harry.">
+  <meta name="twitter:image" content="https://harryliao.design/images/TB.webp">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xian-Hao (Harry) Liao",
+    "url": "https://harryliao.design/",
+    "jobTitle": "Multimedia Designer",
+    "alumniOf": "Massachusetts College of Art and Design",
+    "sameAs": [
+      "https://www.linkedin.com/in/xian-hao-liao/",
+      "https://www.behance.net/xianhaoliao-design",
+      "https://www.instagram.com/xianhaoliao.design/",
+      "https://www.youtube.com/@HarryLiaoVideo"
+    ]
+  }
+  </script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="../icon.ico" type="icon">
+  <link type="image/x-icon" href="../icon.ico" rel="icon">
+  <link type="image/x-icon" href="../icon.ico" rel="shortcut icon">
+  <link type="image/x-icon" href="../icon.ico" rel="bookmark">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="preload" as="style" href="../assets/css/about.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <link rel="preload" as="style" href="../assets/css/work.css">
+  <link rel="stylesheet" href="../assets/css/work.css">
+  <link rel="preload" as="style" href="../assets/css/contact.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  <link rel="stylesheet" href="../assets/css/project-detail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
+  <link rel="preload" as="image" href="../images/xianhaoliao.webp">
+  <link rel="preload" as="image" href="../images/TB.webp">
+  <link rel="preload" as="image" href="../images/YB.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/navbar.js" defer></script>
+  <script src="../assets/js/about.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/feature.js" defer></script>
+  <script src="../assets/js/lazy-images.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="../assets/js/animations.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Black+Ops+One&family=League+Spartan:wght@700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <script>
+    // If the URL has an SPA fragment, hide the main content immediately
+    // to avoid flashing the index content before the SPA fragment loads.
+    try {
+      const path = location.pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+      const isZh = path.startsWith('zh');
+      const page = isZh ? path.replace(/^zh\/?/, '') : path;
+      if (/^(about|work|contact)$/i.test(page)) {
+        document.documentElement.classList.add('spa-loading');
+        document.body.classList.add('spa-loading');
+      }
+    } catch (e) { }
+  </script>
+
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="/" class="main-menu-link" data-menu-key="home">HOME</a>
+      <a href="/about" class="main-menu-link" data-menu-key="about">ABOUT</a>
+      <a href="/work/" class="main-menu-link active" data-menu-key="work">• WORK</a>
+      <a href="/contact" class="main-menu-link" data-menu-key="contact">CONTACT</a>
+    </div>
+
+    <div class="nav-center">
+      <a href="/" class="logo-link">HARRY LIAO</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer"
+        class="social-link">Be</a>
+      <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer"
+        class="social-link">in</a>
+      <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer"
+        class="social-link">YT</a>
+      <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer"
+        class="social-link">IG</a>
+      <button class="lang-toggle desktop-lang-toggle" type="button" data-lang-toggle><span
+          class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+          class="lang-option lang-zh">中</span></button>
+    </div>
+
+    <button class="mobile-menu-toggle" id="openMenuBtn" aria-label="Open menu">☰</button>
+    <button class="lang-toggle mobile-lang-toggle" type="button" data-lang-toggle><span
+        class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+        class="lang-option lang-zh">中</span></button>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="menu-header">
+      <a href="/" class="logo-link">HARRY LIAO</a>
+      <div class="menu-header-actions">
+        <button class="lang-toggle overlay-lang-toggle" type="button" data-lang-toggle><span
+            class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+            class="lang-option lang-zh">中</span></button>
+        <button class="close-btn" id="closeMenuBtn" aria-label="Close menu">♦ CLOSE ♦</button>
+      </div>
+    </div>
+
+    <div class="menu-divider"></div>
+
+    <nav class="mobile-nav-links">
+      <a href="/" class="mobile-link" data-menu-key="home">HOME</a>
+      <a href="/about" class="mobile-link" data-menu-key="about">ABOUT</a>
+      <a href="/work/" class="mobile-link active" data-menu-key="work">WORK</a>
+      <a href="/contact" class="mobile-link" data-menu-key="contact">CONTACT</a>
+    </nav>
+
+    <div class="menu-divider"></div>
+
+    <div class="mobile-socials">
+      <span class="arrows">&gt;&gt;</span>
+      <div class="social-icons">
+        <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer">Be</a>
+        <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer">YT</a>
+        <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer">IG</a>
+      </div>
+      <span class="arrows">&lt;&lt;</span>
+    </div>
+
+    <div class="mobile-footer-text">// Designing the next reality.</div>
+  </div>
+
+  <div id="mainContent">
+    
+
+    <div class="for-u-page">
+      <div class="for-u-container">
+
+        <!-- Project Header -->
+        <header class="project-header">
+          <div class="project-title-area">
+            <h1>For-U: M/V</h1>
+            <p class="subtitle"
+              data-i18n-zh="「For-U」是一首由 RNGDN 創作，並與新生代女歌手 Luna 共同演出的浩室音樂單曲。故事講述了一位年輕女孩的內心世界，希望能為聽眾帶來一部充滿動感的音樂作品。">
+              "For-U" is a house music single created by RNGDN and co-performed with the new female singer Luna. The
+              story tells the inner world of a young girl, hoping to bring listeners a dynamic musical work.
+            </p>
+          </div>
+
+          <!-- Metadata -->
+          <div class="project-meta-table">
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="類別">Category</span>
+              <span class="meta-value" data-i18n-zh="音樂錄影帶">Music Video</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="角色">Role</span>
+              <span class="meta-value" data-i18n-zh="音樂製作人">Music Producer</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="年份">Date</span>
+              <span class="meta-value">2019</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="公司">Company</span>
+              <span class="meta-value" data-i18n-zh="兄弟會音樂 Brotherhood Casual">Brotherhood Casual</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Video -->
+        <section class="media-block full-width">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://player.vimeo.com/video/1205695343?autoplay=1&loop=1&muted=1&controls=1&title=0&byline=0&portrait=0"
+              title="Vimeo video player" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen></iframe>
+          </div>
+          <div class="block-caption" style="justify-content: center; text-align: center;">
+            <span class="video-title--subtle" data-i18n-zh="(影片標題：Reno Gordon / 為你 For - U (Feat. Luna) Official Music Video)">
+              (Video Title: Reno Gordon / 為你 For - U (Feat. Luna) Official Music Video)
+            </span>
+          </div>
+        </section>
+
+        <!-- About This Project -->
+        <section class="content-grid-2col">
+          <div class="text-section">
+            <span class="section-kicker" data-i18n-zh="總覽">Overview</span>
+            <h3 data-i18n-zh="關於此專案">About This Project</h3>
+            <p data-i18n-zh="這是一部完全基於虛擬場景創作的音樂作品，充滿未來元素並結合 3D 動畫。">
+              This is a music completely created based on a virtual set, which is full of futuristic elements and
+              combined with 3D animation.
+            </p>
+            <div class="project-tags">
+              <span class="tag">🎵 Music Videos</span>
+              <span class="tag">💡 Art Direction</span>
+              <span class="tag">🌐 3D Modeling</span>
+            </div>
+          </div>
+          <div class="media-block media-block--flush">
+            <div class="image-wrapper">
+              <img src="../images/Project/for_u_04.webp" alt="For-U Scene" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <!-- Thanks To My Team -->
+        <section class="content-grid-2col content-grid-2col--stretch">
+          <div class="media-block media-block--flush">
+            <div class="image-wrapper">
+              <img src="../images/Project/For-U_cover.webp" alt="For-U Cover" loading="lazy">
+            </div>
+          </div>
+          <div class="text-section">
+            <span class="section-kicker" data-i18n-zh="團隊">Team</span>
+            <h3 data-i18n-zh="感謝我的團隊">Thanks To My Team</h3>
+            <ul class="thanks-team-list credits-list">
+              <li>
+                <strong>-Video Credit-</strong>
+                <span data-i18n-zh="企劃統籌：Reno Gordon 里諾戈登">Planner: Reno Gordon</span>
+                <span data-i18n-zh="創意統籌：楊博智 Po Zhi Yang">Creative Director: Po Zhi Yang</span>
+                <span data-i18n-zh="導演/編劇：RNGDN 里諾戈登">Director/Writer: RNGDN</span>
+              </li>
+              <li>
+                <strong>-Brotherhood Casual-</strong>
+                <span data-i18n-zh="專輯製作&藝人經紀整合工作室：兄弟會音樂 Brotherhood Casual">Production &
+                  Management Studio: Brotherhood Casual</span>
+                <span data-i18n-zh="經紀人：鄢天佑">Manager: Tian-You Yan</span>
+              </li>
+              <li>
+                <strong>-Song Credit-</strong>
+                <span data-i18n-zh="製作人 Producer：Reno Gordon 里諾戈登">Producer: Reno Gordon</span>
+                <span data-i18n-zh="編曲 Arranger：RNGDN 里諾戈登">Arranger: RNGDN</span>
+                <span data-i18n-zh="和聲編寫 Backing Vocal Arranger：謝遜 Xun Xie">Backing Vocal
+                  Arranger: Xun Xie</span>
+                <span data-i18n-zh="錄音工程師 Recording Engineer：謝遜 Xun Xie">Recording Engineer: Xun
+                  Xie</span>
+                <span data-i18n-zh="錄音工作室 Recording Studio：金音俱樂部錄音室 Gold Sound Club Studio">Recording Studio: Gold Sound Club Studio</span>
+                <span data-i18n-zh="母帶工程師 Mastering Engineer：Austin Leeds">Mastering Engineer:
+                  Austin Leeds</span>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+        <!-- Branding Design -->
+        <section class="section-header section-header--mt-lg">
+          <h2 data-i18n-zh="「音樂影片設計」">&quot;Music Video Design&quot;</h2>
+          <p class="section-header-desc"
+            data-i18n-zh="影片設計的靈感來自宇宙、探索與未來的主題。藉由深藍色與銀色作為主色調，傳達出高科技與神祕的感覺。透過 3D 模型與光影的變化，創造了獨特的視覺風格。">
+            The video design is inspired by the themes of the universe, exploration, and the future. By using deep blue
+            and silver as the main colors, it conveys a high-tech and mysterious feel. A unique visual style is created
+            through 3D models and light and shadow changes.
+          </p>
+        </section>
+
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/for_u_05.webp" alt="For-U Typography Design" loading="lazy">
+          </div>
+        </section>
+
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/for_u_03.webp" alt="For-U Landscape Render" loading="lazy">
+          </div>
+        </section>
+
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/for_u_01.webp" alt="For-U Detail 1" loading="lazy">
+          </div>
+        </section>
+
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/for_u_02.webp" alt="For-U Detail 2" loading="lazy">
+          </div>
+        </section>
+
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/For-U_Harry.webp" alt="Working Photo of Harry" loading="lazy">
+          </div>
+        </section>
+
+        <!-- Footer CTA -->
+        <section class="learn-more-section learn-more-section--spaced">
+          <div class="learn-more-inner">
+            <h2 class="learn-more-title" data-i18n-zh="期待很快與您對話！">Looking Forward To Speaking With You Soon!</h2>
+            <a href="/work/" data-spa-target="work" class="learn-more-btn">
+              <span data-i18n-zh="查看更多作品">See more work</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="tech-divider bottom-divider"></div>
+
+    <div class="giant-name-container">
+      <h1 class="giant-name">HARRY LIAO</h1>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-left">©2026 ALL RIGHTS RESERVED.</div>
+      <div class="footer-right">
+        <!-- email_off --><a href="mailto:harryxliao@gmail.com">HARRYXLIAO@GMAIL.COM</a><!-- /email_off -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+/* ═══════════════════════════════════════════
+   Gate X RedBull Racing F1 NFT — Page Styles
+   Inherits structural patterns from gate-mg.css
+   Accent palette: RedBull Navy + Racing Red
+   ═══════════════════════════════════════════ */
+
+/* ── CSS Variables ── */
+.gate-redbull-page {
+  --rb-red:    #ffffff;
+  --rb-navy:   #001b48;
+  --rb-gold:   #f5a623;
+  --rb-white:  #ffffff;
+  --bg:        #040404;
+  --surface:   #0d0d0d;
+  --border:    rgba(255,255,255,0.06);
+  --border-hover: rgba(255,255,255,0.35);
+  --text-dim:  rgba(255,255,255,0.55);
+  --text-faint:rgba(255,255,255,0.38);
+  background: var(--bg);
+  color: var(--rb-white);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ── Container ── */
+.gate-redbull-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: calc(100px + env(safe-area-inset-top)) 24px 100px;
+}
+
+/* ══════════════════════════════════════
+   PROJECT HEADER
+   ══════════════════════════════════════ */
+.project-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-bottom: 32px;
+  align-items: end;
+}
+
+.project-title-area h1 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(40px, 8vw, 84px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+  color: var(--rb-white);
+}
+
+/* Red underline accent on title */
+.project-title-area h1 span.accent {
+  color: var(--rb-red);
+}
+
+.project-title-area p.subtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(13px, 1.5vw, 16px);
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 680px;
+}
+
+/* ── Metadata Table ── */
+.project-meta-table {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.meta-row:last-child { border-bottom: none; }
+
+.meta-label { color: var(--text-faint); text-transform: uppercase; }
+.meta-value  { color: var(--rb-white);  text-align: right; }
+
+/* ══════════════════════════════════════
+   HERO BANNER IMAGE  (full-bleed)
+   ══════════════════════════════════════ */
+.rb-hero-banner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.rb-hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rb-hero-banner:hover img { transform: scale(1.015); }
+
+/* ══════════════════════════════════════
+   IMPACT STRIP — RedBull 453K stat
+   ══════════════════════════════════════ */
+.rb-impact-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 40px 0;
+  margin: 0 0 52px;
+}
+
+.rb-impact-stat {
+  flex: 1;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.rb-impact-num {
+  display: block;
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--rb-white);
+  margin-bottom: 12px;
+}
+
+.rb-impact-label {
+  display: block;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+
+/* ══════════════════════════════════════
+   MEDIA BLOCK ELEMENTS
+   ══════════════════════════════════════ */
+.media-block {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.media-block.full-width { width: 100%; }
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  background: var(--surface);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s ease;
+}
+
+.image-wrapper:hover { border-color: var(--border-hover); }
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-wrapper:hover img { transform: scale(1.02); }
+
+.block-caption {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-top: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ══════════════════════════════════════
+   CONTRIBUTIONS SECTION
+   ══════════════════════════════════════ */
+.contributions-section {
+  margin: 28px 0 28px;
+  padding-top: 0;
+}
+
+.contributions-header { margin-bottom: 48px; }
+
+.contributions-kicker {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 14px 0;
+}
+
+.contributions-header h2,
+.tools-header h2 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(28px, 4vw, 52px);
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--rb-white);
+}
+
+.contributions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contribution-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  padding: 28px 0;
+  align-items: start;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s ease;
+}
+
+.contribution-card:last-child { border-bottom: none; }
+
+.contribution-number {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.4);
+  padding-top: 4px;
+}
+
+.contribution-content h4 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(18px, 2.2vw, 24px);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  color: var(--rb-white);
+}
+
+.contribution-content p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.62);
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   2-COLUMN LAYOUT
+   ══════════════════════════════════════ */
+.content-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.text-section h3 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(24px, 3.5vw, 40px);
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--rb-white);
+}
+
+.text-section p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   QUOTE / HIGHLIGHT BANNER
+   ══════════════════════════════════════ */
+.quote-banner {
+  text-align: center;
+  padding: 50px 20px;
+  margin: 30px 0;
+}
+
+.quote-banner h2 {
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(24px, 4.5vw, 54px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--rb-white);
+}
+
+.quote-banner h2 em {
+  font-style: normal;
+  color: var(--rb-red);
+}
+
+/* ══════════════════════════════════════
+   TOOLS SECTION
+   ══════════════════════════════════════ */
+.tools-section {
+  margin: 0 0 50px;
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+}
+
+.tools-header { margin-bottom: 32px; }
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.tool-pill {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.75);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.tool-pill:hover {
+  border-color: rgba(255,255,255,0.55);
+  color: var(--rb-white);
+  background: transparent;
+}
+
+.tools-desc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-dim);
+  max-width: 720px;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   BACK-TO-WORK BUTTON
+   ══════════════════════════════════════ */
+.back-to-work-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--rb-white);
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: transparent;
+  cursor: pointer;
+}
+
+.back-to-work-btn:hover {
+  background: var(--rb-white);
+  color: var(--bg);
+  border-color: var(--rb-white);
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════ */
+@media (max-width: 900px) {
+  .project-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .content-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .quote-banner { padding: 40px 10px; }
+}
+
+@media (max-width: 760px) {
+  .contributions-section { margin: 40px 0 36px; }
+
+  .contribution-card {
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+    padding: 22px 0;
+  }
+
+  .rb-impact-strip {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0;
+  }
+
+  .rb-impact-stat { padding: 0; }
+
+  .tools-section { padding: 40px 0; }
+}

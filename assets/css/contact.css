@@ -1,0 +1,180 @@
+/* Contact page styles */
+
+.contact-page {
+  background: #030303;
+  color: #fff;
+}
+
+body.spa-contact .site-footer {
+  display: none !important;
+}
+
+.contact-container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contact-hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #000;
+  overflow: hidden;
+}
+
+.contact-video-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.contact-video,
+.contact-video-wrap iframe,
+.contact-bottom-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.55);
+  display: block;
+  pointer-events: none;
+}
+
+.contact-video-wrap iframe {
+  top: 50%;
+  left: 50%;
+  width: max(177.78vh, 100vw);
+  height: max(56.25vw, 100vh);
+  transform: translate(-50%, -50%);
+}
+
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.38) 100%);
+}
+
+.contact-copy {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+  padding: 24px;
+}
+
+.contact-kicker {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.contact-email {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'League Spartan', 'Anton', sans-serif;
+  font-size: clamp(28px, 6vw, 88px);
+  line-height: 1.0;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-break: normal;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.contact-email:hover {
+  opacity: 0.92;
+}
+
+.contact-email:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.72);
+  outline-offset: 6px;
+}
+
+.contact-send {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.contact-send:hover {
+  border-color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-1px);
+}
+
+.contact-video-caption {
+  position: absolute;
+  left: 24px;
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.contact-video-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.28) 100%);
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .contact-container {
+    padding: 0;
+  }
+
+  .contact-hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .contact-copy {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 18px;
+  }
+
+  .contact-email {
+    /* reduce minimum on small screens so the email won't wrap */
+    font-size: clamp(12px, 7vw, 40px);
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-video-caption {
+    left: 14px;
+    right: 14px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+  }
+}

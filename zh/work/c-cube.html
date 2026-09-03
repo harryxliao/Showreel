@@ -1,0 +1,600 @@
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="C-Cube 是為大學生創業教育而生的整合平台，由廖先皓 (Harry Liao) 設計與開發。網頁設計、UI/UX、前端開發。">
+  <meta name="keywords"
+    content="廖先皓, Harry Liao, C-Cube, 創業教育平台, 網頁設計, UI/UX 設計, 前端開發">
+  <meta name="author" content="Xian-Hao (Harry) Liao">
+  <meta name="robots" content="index, follow">
+  <title>C-Cube — 廖先皓 Harry Liao | 網頁設計 & UI/UX 作品集</title>
+
+  <link rel="alternate" hreflang="x-default" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="en" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://harryliao.design/zh/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://harryliao.design/zh/work/c-cube.html">
+  <meta property="og:title" content="C-Cube — 廖先皓 Harry Liao | 網頁設計作品集">
+  <meta property="og:description"
+    content="C-Cube 是為大學生創業教育而生的整合平台，由廖先皓 (Harry Liao) 設計與開發。">
+  <meta property="og:image" content="https://harryliao.design/images/Project/C-cube/c-cube-hero.webp">
+  <meta property="og:site_name" content="Harry Liao Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://harryliao.design/zh/work/c-cube.html">
+  <meta name="twitter:title" content="C-Cube — 廖先皓 Harry Liao | 網頁設計作品集">
+  <meta name="twitter:description"
+    content="C-Cube 是為大學生創業教育而生的整合平台，由廖先皓 (Harry Liao) 設計與開發。">
+  <meta name="twitter:image" content="https://harryliao.design/images/Project/C-cube/c-cube-hero.webp">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xian-Hao (Harry) Liao",
+    "url": "https://harryliao.design/",
+    "jobTitle": "Multimedia Designer",
+    "alumniOf": "Massachusetts College of Art and Design",
+    "sameAs": [
+      "https://www.linkedin.com/in/xian-hao-liao/",
+      "https://www.behance.net/xianhaoliao-design",
+      "https://www.instagram.com/xianhaoliao.design/",
+      "https://www.youtube.com/@HarryLiaoVideo"
+    ]
+  }
+  </script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="../../icon.ico" type="icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="shortcut icon">
+  <link type="image/x-icon" href="../../icon.ico" rel="bookmark">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="preload" as="style" href="../../assets/css/about.css">
+  <link rel="stylesheet" href="../../assets/css/about.css">
+  <link rel="preload" as="style" href="../../assets/css/work.css">
+  <link rel="stylesheet" href="../../assets/css/work.css">
+  <link rel="preload" as="style" href="../../assets/css/contact.css">
+  <link rel="stylesheet" href="../../assets/css/contact.css">
+  <link rel="stylesheet" href="../../assets/css/project-detail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="image" href="../../images/xianhaoliao.webp">
+  <link rel="preload" as="image" href="../../images/TB.webp">
+  <link rel="preload" as="image" href="../../images/YB.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="../../assets/js/i18n.js" defer></script>
+  <script src="../../assets/js/navbar.js" defer></script>
+  <script src="../../assets/js/about.js" defer></script>
+  <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/feature.js" defer></script>
+  <script src="../../assets/js/lazy-images.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="../../assets/js/animations.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Black+Ops+One&family=League+Spartan:wght@700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <script>
+    try {
+      const path = location.pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+      const isZh = path.startsWith('zh');
+      const page = isZh ? path.replace(/^zh\/?/, '') : path;
+      if (/^(about|work|contact)$/i.test(page)) {
+        document.documentElement.classList.add('spa-loading');
+        document.body.classList.add('spa-loading');
+      }
+    } catch (e) { }
+  </script>
+
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="/zh/" class="main-menu-link active" data-menu-key="home">• HOME</a>
+      <a href="/zh/about" class="main-menu-link" data-menu-key="about">ABOUT</a>
+      <a href="/zh/work/" class="main-menu-link" data-menu-key="work">WORK</a>
+      <a href="/zh/contact" class="main-menu-link" data-menu-key="contact">CONTACT</a>
+    </div>
+
+    <div class="nav-center">
+      <a href="/zh/" class="logo-link">HARRY LIAO</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer"
+        class="social-link">Be</a>
+      <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer"
+        class="social-link">in</a>
+      <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer"
+        class="social-link">YT</a>
+      <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer"
+        class="social-link">IG</a>
+      <button class="lang-toggle desktop-lang-toggle" type="button" data-lang-toggle><span
+          class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+          class="lang-option lang-zh">中</span></button>
+    </div>
+
+    <button class="mobile-menu-toggle" id="openMenuBtn" aria-label="Open menu">☰</button>
+    <button class="lang-toggle mobile-lang-toggle" type="button" data-lang-toggle><span
+        class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+        class="lang-option lang-zh">中</span></button>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="menu-header">
+      <a href="/zh/" class="logo-link">HARRY LIAO</a>
+      <div class="menu-header-actions">
+        <button class="lang-toggle overlay-lang-toggle" type="button" data-lang-toggle><span
+            class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+            class="lang-option lang-zh">中</span></button>
+        <button class="close-btn" id="closeMenuBtn" aria-label="Close menu">♦ CLOSE ♦</button>
+      </div>
+    </div>
+
+    <div class="menu-divider"></div>
+
+    <nav class="mobile-nav-links">
+      <a href="/zh/" class="mobile-link active" data-menu-key="home">HOME</a>
+      <a href="/zh/about" class="mobile-link" data-menu-key="about">ABOUT</a>
+      <a href="/zh/work/" class="mobile-link" data-menu-key="work">WORK</a>
+      <a href="/zh/contact" class="mobile-link" data-menu-key="contact">CONTACT</a>
+    </nav>
+
+    <div class="menu-divider"></div>
+
+    <div class="mobile-socials">
+      <span class="arrows">&gt;&gt;</span>
+      <div class="social-icons">
+        <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer">Be</a>
+        <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer">YT</a>
+        <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer">IG</a>
+      </div>
+      <span class="arrows">&lt;&lt;</span>
+    </div>
+
+    <div class="mobile-footer-text">// Designing the next reality.</div>
+  </div>
+
+  <div id="mainContent">
+
+    <div class="c-cube-page">
+      <div class="c-cube-container">
+
+        <!-- Project Header -->
+        <header class="project-header">
+          <div class="project-title-area">
+            <h1>C-CUBE</h1>
+            <p class="subtitle" data-i18n-zh="為大學生創業教育而生的平台，啟迪他們的創業之路。">
+              A platform of entrepreneurship education for college students, initiating their paths to start-up.
+            </p>
+          </div>
+
+          <!-- Metadata -->
+          <div class="project-meta-table">
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="類別">Medium</span>
+              <span class="meta-value" data-i18n-zh="網頁設計 / UI/UX 設計">Web Design / UI/UX Design</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="年份">Date</span>
+              <span class="meta-value">2023 – 2024</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="角色">Role</span>
+              <span class="meta-value" data-i18n-zh="首席設計師 & 前端開發者">Lead Designer &amp; Frontend Developer</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Image -->
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../../images/Project/C-cube/c-cube-scenario.webp" alt="C-Cube Platform Hero Showcase" loading="lazy">
+          </div>
+        </section>
+
+        <!-- Landing Pages Section -->
+        <section class="content-grid-2col">
+          <div class="text-section">
+            <p class="section-kicker" data-i18n-zh="網站設計">Web Design</p>
+            <h3 data-i18n-zh="首頁與登陸頁面設計">Landing Pages</h3>
+            <p data-i18n-zh="C-Cube 提供了易於閱讀的介面與直覺的使用者體驗，透過清晰的視覺層次與精心設計的版面配置，讓每一位來訪的學生創業者都能快速找到所需資源。">
+              C-Cube delivers an easy-to-read user interface that creates a straightforward user experience. With clear
+              visual hierarchy and thoughtfully designed layouts, every student entrepreneur can quickly find the
+              resources they need.
+            </p>
+            <p data-i18n-zh="平台首頁採用大型視覺主圖搭配精煉的資訊分區，引導使用者直覺地探索課程、活動與新創資源。">
+              The homepage features large visual heroes paired with refined information zones, guiding users to
+              intuitively explore courses, events, and startup resources.
+            </p>
+          </div>
+          <div class="media-block">
+            <div class="image-wrapper">
+              <img src="../../images/Project/C-cube/c-cube-landing.webp" alt="C-Cube Landing Page Design" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <!-- User Scenarios Section -->
+        <section class="content-grid-2col">
+          <div class="media-block brand-image">
+            <div class="image-wrapper" style="border: none;">
+              <img src="../../images/Project/C-cube/c-cube-hero.webp" alt="C-Cube User Scenario Research" loading="lazy">
+            </div>
+          </div>
+          <div class="text-section">
+            <p class="section-kicker" data-i18n-zh="使用者研究">User Research</p>
+            <h3 data-i18n-zh="深度理解使用者情境">Deeply Understand User Scenarios</h3>
+            <p data-i18n-zh="我們透過深入的使用者訪談與情境分析，了解大學生創業者在尋找資源、建立人脈與參與活動時所面臨的挑戰與需求。">
+              Through in-depth user interviews and scenario analysis, we uncovered the challenges and needs college
+              student entrepreneurs face when seeking resources, building networks, and participating in events.
+            </p>
+            <p data-i18n-zh="這些研究洞察直接驅動了平台的核心功能設計，確保每個功能模組都能精準回應真實的使用者需求。">
+              These research insights directly drove the design of the platform's core features, ensuring every module
+              precisely addresses real user needs.
+            </p>
+          </div>
+        </section>
+
+        <!-- Quote Banner: Grid Showcase -->
+        <section class="section-header">
+          <p class="section-kicker" data-i18n-zh="網頁展示">Grid Showcase</p>
+          <h2 data-i18n-zh="致力於開發一個協助學生創業者的整合平台">"Aim To Develop A Station To Assist Student Entrepreneurs"</h2>
+        </section>
+
+        <!-- 2x3 Grid of Cards -->
+        <div class="c-cube-grid-container">
+          <div class="c-cube-card" style="background-image: url('../../images/Project/C-cube/courses_bg_06.webp');"></div>
+          <div class="c-cube-card" style="background-image: url('../../images/Project/C-cube/c-cube-grid-02.webp');"></div>
+          <div class="c-cube-card" style="background-image: url('../../images/Project/C-cube/c-cube-grid-03.webp');"></div>
+          <div class="c-cube-card" style="background-image: url('../../images/Project/C-cube/c-cube-grid-04.webp');"></div>
+          <div class="c-cube-card" style="background-image: url('../../images/Project/C-cube/c-cube-grid-05.webp');"></div>
+          <div class="c-cube-card" style="background-image: url('../../images/Project/C-cube/1_C-CUBE.webp');"></div>
+        </div>
+
+        <!-- Build from Scratch Section -->
+        <section class="content-grid-2col content-grid-2col--mt-lg">
+          <div class="text-section">
+            <p class="section-kicker" data-i18n-zh="開發過程">Development</p>
+            <h3 data-i18n-zh="從零開始構建網站">Build The Website From Scratch</h3>
+            <p data-i18n-zh="C-Cube 整個網站由我從零開始設計並開發，包含版型規劃、視覺設計系統、前端程式碼實作，以及各頁面的響應式佈局設計。">
+              The entire C-Cube website was designed and built from scratch by me, encompassing layout planning, visual
+              design systems, frontend code implementation, and responsive layout design across all pages.
+            </p>
+            <p data-i18n-zh="這個過程讓我深刻體會到設計與開發之間的緊密關係，以及如何將視覺概念轉化為可運作的數位產品。">
+              This process gave me a profound understanding of the tight relationship between design and development, and
+              how to transform visual concepts into functional digital products.
+            </p>
+          </div>
+          <div class="media-block">
+            <div class="image-wrapper">
+              <img src="../../images/Project/C-cube/c-cube-build-logo.webp" alt="C-Cube Brand Logo Banner" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <!-- Information Architecture Section -->
+        <section class="content-grid-2col content-grid-2col--mt-lg">
+          <div class="media-block media-block--flush">
+            <div class="image-wrapper image-wrapper--canvas">
+              <img src="../../images/Project/C-cube/c-cube-poster-02.webp" alt="C-Cube Poster 02 Design" loading="lazy" data-lightbox class="c-cube-lightbox-trigger">
+            </div>
+          </div>
+          <div class="text-section">
+            <div class="ck-insight-tag-wrap">
+              <span class="ck-insight-tag" data-i18n-zh="資訊設計">Information Design</span>
+            </div>
+            <h2 class="ck-insight-heading" data-i18n-zh="C-Cube 資訊架構">C-Cube Information Architecture</h2>
+            <p class="ck-body-text"
+              data-i18n-zh="我們仔細規劃了整個平台的資訊架構，確保使用者能透過直覺的導航路徑找到所有功能與內容。">
+              We carefully mapped the entire platform's information architecture, ensuring users can find all features
+              and content through intuitive navigation paths.
+            </p>
+            <p class="ck-body-text"
+              data-i18n-zh="清晰的站點地圖幫助團隊對齊對產品的共同理解，並作為前端開發的重要參考藍圖。">
+              A clear sitemap helped the team align on a shared understanding of the product, and served as a crucial
+              reference blueprint for frontend development.
+            </p>
+          </div>
+        </section>
+
+        <!-- Services Mockup Quote Banner -->
+        <section class="section-header section-header--mt-lg">
+          <p class="section-kicker" data-i18n-zh="服務整合">Service Integration</p>
+          <h2 data-i18n-zh="培養了整合多面向服務與數位系統的能力">"Developed Skills In Integrating Multi-Faceted Services"</h2>
+        </section>
+
+        <!-- 3-Column Services Mockups -->
+        <div class="c-cube-services-row">
+          <div class="c-cube-service-item">
+            <div class="image-wrapper">
+              <img src="../../images/Project/C-cube/c-cube-service-01.webp" alt="C-Cube Service Dashboard 01" loading="lazy">
+            </div>
+          </div>
+          <div class="c-cube-service-item">
+            <div class="image-wrapper">
+              <img src="../../images/Project/C-cube/c-cube-service-02.webp" alt="C-Cube Service Dashboard 02" loading="lazy">
+            </div>
+          </div>
+          <div class="c-cube-service-item">
+            <div class="image-wrapper" style="border: none;">
+              <img src="../../images/Project/C-cube/c-cube-service-03.webp" alt="C-Cube Service Dashboard 03" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Video -->
+        <section class="media-block full-width">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/_k0d3-ArPRw?autoplay=1&loop=1&playlist=_k0d3-ArPRw&mute=1"
+              frameborder="0"
+              allow="autoplay; picture-in-picture; web-share"
+              allowfullscreen
+              sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
+          </div>
+        </section>
+
+        <!-- Award Quote Banner -->
+        <section class="section-header section-header--prototype">
+          <div class="ck-insight-tag-wrap--lg">
+            <span class="ck-insight-tag" data-i18n-zh="最終成果">Final Result</span>
+          </div>
+          <h2 class="ck-insight-heading" data-i18n-zh="我們在最終專案評選中榮獲銅獎">"We Won The Bronze Prize In The Final Project"</h2>
+        </section>
+
+        <!-- Award Image -->
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../../images/Project/C-cube/finalpractice.webp" alt="C-Cube Team Bronze Prize Award Ceremony" loading="lazy">
+          </div>
+        </section>
+
+        <!-- Footer CTA -->
+        <section class="learn-more-section learn-more-section--spaced">
+          <div class="learn-more-inner">
+            <h2 class="learn-more-title" data-i18n-zh="期待與您合作！">Looking Forward To Speaking With You Soon!</h2>
+            <a href="/zh/work/" class="learn-more-btn" id="ccubeZhBackBtn">
+              <span data-i18n-zh="查看更多作品">See more work</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="tech-divider bottom-divider"></div>
+
+    <div class="giant-name-container">
+      <h1 class="giant-name">HARRY LIAO</h1>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-left">©2026 ALL RIGHTS RESERVED.</div>
+      <div class="footer-right">
+        <!-- email_off --><a href="mailto:harryxliao@gmail.com">HARRYXLIAO@GMAIL.COM</a><!-- /email_off -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<!-- Lightbox Modal -->
+<div id="ccubeLightbox" style="
+  display:none; position:fixed; inset:0; z-index:9999;
+  background:rgba(0,0,0,0.92); backdrop-filter:blur(8px);
+  align-items:center; justify-content:center; cursor:zoom-out;
+  overflow:hidden; touch-action:none;
+">
+  <div id="ccubeLightboxContainer" style="
+    position:relative; width:100%; height:100%;
+    display:flex; align-items:center; justify-content:center;
+  ">
+    <img id="ccubeLightboxImg" src="" alt="Enlarged view" style="
+      max-width:95vw; max-height:95vh; object-fit:contain;
+      box-shadow:0 24px 80px rgba(0,0,0,0.7);
+      transition:none; transform-origin:center;
+      cursor:zoom-in; user-select:none; -webkit-user-drag:none;
+    ">
+  </div>
+  <button style="
+    position:absolute; top:20px; right:28px; z-index:10000;
+    background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.3); color:#fff;
+    font-size:20px; width:44px; height:44px; border-radius:50%;
+    cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:background 0.2s;
+  " aria-label="Close">✕</button>
+</div>
+
+<script>
+(function(){
+  var triggers = document.querySelectorAll('.c-cube-lightbox-trigger');
+  var lightbox = document.getElementById('ccubeLightbox');
+  var lightboxImg = document.getElementById('ccubeLightboxImg');
+  
+  var scale = 1;
+  var pointX = 0;
+  var pointY = 0;
+  var start = { x: 0, y: 0 };
+  var isPanning = false;
+  var panned = false;
+
+  function updateTransform() {
+    lightboxImg.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+  }
+
+  function resetZoom() {
+    scale = 1;
+    pointX = 0;
+    pointY = 0;
+    updateTransform();
+    lightboxImg.style.cursor = "zoom-in";
+  }
+
+  triggers.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      resetZoom();
+    });
+  });
+
+  lightbox.addEventListener('click', function(e) {
+    if ((e.target === lightbox || e.target === document.getElementById('ccubeLightboxContainer')) && !panned) {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  });
+
+  var closeBtn = lightbox.querySelector('button');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      lightbox.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+  }
+
+  lightbox.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    var xs = (e.clientX - lightbox.clientWidth / 2 - pointX) / scale;
+    var ys = (e.clientY - lightbox.clientHeight / 2 - pointY) / scale;
+    var delta = (e.deltaY < 0) ? 1.25 : 0.8;
+    var tempScale = scale * delta;
+    
+    if (tempScale >= 1 && tempScale <= 8) {
+      scale = tempScale;
+      pointX = (e.clientX - lightbox.clientWidth / 2) - xs * scale;
+      pointY = (e.clientY - lightbox.clientHeight / 2) - ys * scale;
+      updateTransform();
+    } else if (tempScale < 1) {
+      resetZoom();
+    }
+    
+    if (scale > 1) {
+      lightboxImg.style.cursor = "grab";
+    } else {
+      lightboxImg.style.cursor = "zoom-in";
+    }
+  }, { passive: false });
+
+  lightboxImg.addEventListener('dblclick', function(e) {
+    e.stopPropagation();
+    if (scale > 1) {
+      resetZoom();
+    } else {
+      scale = 3;
+      var clientRect = lightbox.getBoundingClientRect();
+      pointX = (e.clientX - clientRect.left - clientRect.width / 2) * (1 - scale);
+      pointY = (e.clientY - clientRect.top - clientRect.height / 2) * (1 - scale);
+      updateTransform();
+      lightboxImg.style.cursor = "grab";
+    }
+  });
+
+  lightboxImg.addEventListener('mousedown', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    isPanning = true;
+    panned = false;
+    start = { x: e.clientX - pointX, y: e.clientY - pointY };
+    if (scale > 1) {
+      lightboxImg.style.cursor = "grabbing";
+    }
+  });
+
+  document.addEventListener('mousemove', function(e) {
+    if (!isPanning) return;
+    panned = true;
+    pointX = e.clientX - start.x;
+    pointY = e.clientY - start.y;
+    updateTransform();
+  });
+
+  document.addEventListener('mouseup', function(e) {
+    if (!isPanning) return;
+    isPanning = false;
+    if (scale > 1) {
+      lightboxImg.style.cursor = "grab";
+    } else {
+      lightboxImg.style.cursor = "zoom-in";
+    }
+    setTimeout(function() {
+      panned = false;
+    }, 50);
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Touch Support
+  var lastTouchDist = 0;
+  var tp = false;
+  lightbox.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 1) {
+      isPanning = true;
+      panned = false;
+      var t = e.touches[0];
+      start = { x: t.clientX - pointX, y: t.clientY - pointY };
+    } else if (e.touches.length === 2) {
+      lastTouchDist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      tp = true;
+    }
+  });
+
+  lightbox.addEventListener('touchmove', function(e) {
+    if (isPanning && e.touches.length === 1) {
+      e.preventDefault();
+      panned = true;
+      var t = e.touches[0];
+      pointX = t.clientX - start.x;
+      pointY = t.clientY - start.y;
+      updateTransform();
+    } else if (e.touches.length === 2 && tp) {
+      e.preventDefault();
+      var dist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      var factor = dist / lastTouchDist;
+      var tempScale = scale * factor;
+      if (tempScale >= 1 && tempScale <= 8) {
+        scale = tempScale;
+        updateTransform();
+      }
+      lastTouchDist = dist;
+    }
+  }, { passive: false });
+
+  lightbox.addEventListener('touchend', function(e) {
+    isPanning = false;
+    tp = false;
+  });
+})();
+</script>
+
+</html>

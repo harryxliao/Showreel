@@ -1,0 +1,341 @@
+/* About page styles extracted from main.css */
+
+/* About page internal layout (used when about fragment is inserted) */
+.about-page { background: #fff; color: #000; padding: 36px; border-radius: 10px; }
+.about-hero { display: flex; gap: 24px; align-items: center; margin-bottom: 28px; }
+.about-hero-left { flex: 1 1 420px; }
+.about-hero-right { flex: 0 0 420px; }
+.about-name { font-size: clamp(28px, 4.2vw, 36px); margin-bottom: 12px; font-weight: 800; }
+.about-bio { color: #222; line-height: 1.6; margin-bottom: 12px; }
+.about-portrait { width: 100%; height: auto; border-radius: 12px; object-fit: cover; }
+.about-skills { display: flex; gap: 18px; margin-bottom: 28px; }
+.skill-card { background: #f5f5f5; padding: 18px; border-radius: 10px; flex: 1 1 0; }
+.skill-card h3 { margin-bottom: 8px; }
+.about-moments { margin-bottom: 28px; }
+.moments-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.moments-grid img { width: 100%; height: auto; border-radius: 14px; display: block; }
+.about-thesis { display: flex; gap: 18px; align-items: center; margin-bottom: 12px; }
+.thesis-left { flex: 1 1 320px; }
+.thesis-right { flex: 0 0 520px; }
+
+@media (max-width: 900px) {
+  .about-hero { flex-direction: column; }
+  .about-hero-right { width: 100%; }
+  .about-skills { flex-direction: column; }
+  .about-thesis { flex-direction: column; }
+}
+
+/* --- Styles to closely mirror referenced about design --- */
+.about-style-ref { background: var(--bg-color); color: #fff; padding: 60px 0; }
+.about-container { max-width: 1100px; margin: 0 auto; padding: 80px 28px 28px; }
+.about-hero { display: grid; grid-template-columns: 1fr 420px; gap: 36px; align-items: center; margin: 0 0 64px 0; padding-top: 20px; }
+.about-left { max-width: 620px; }
+.about-title { font-family: 'League Spartan', 'Anton', sans-serif; font-size: clamp(34px, 6vw, 54px); margin: 0 0 18px 0; letter-spacing: -1px; }
+.about-sub { color: #d6d6d6; line-height: 1.8; margin-bottom: 22px; font-family: 'Space Mono', monospace; font-size: 16px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 22px;
+  margin: 0;
+  background-color: #131313;
+  color: #9a9a9a;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #2a2a2a;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.btn:hover {
+  background-color: #111111;
+  border-color: #666666;
+  color: #ffffff;
+}
+
+.btn.resume-btn,
+.btn.thesis-btn,
+.btn.primary,
+.btn.ghost {
+  background-color: #131313;
+  color: #9a9a9a;
+  border-color: #2a2a2a;
+}
+
+.btn.resume-btn:hover,
+.btn.thesis-btn:hover,
+.btn.primary:hover,
+.btn.ghost:hover {
+  background-color: #111111;
+  border-color: #666666;
+  color: #ffffff;
+}
+
+.about-right .portrait-frame { position: relative; width: 100%; height: auto; border-radius: 18px; overflow: hidden; box-shadow: 0 20px 40px rgba(15,15,15,0.08); }
+.about-portrait { width: 100%; max-width: 100%; height: auto; display: block; }
+
+.skill-row {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  align-items: center;
+}
+.skill-block { background: #0f0f10; padding: 26px; border-radius: 14px; flex: 1 1 0; box-shadow: 0 6px 20px rgba(0,0,0,0.25); display: flex; flex-direction: column; justify-content: center; min-height: 160px; }
+.skill-block h3 { margin: 0 0 8px 0; font-size: 18px; color: #fff; }
+.skill-block p { margin: 0; color: #cfcfcf; }
+
+.moments { text-align: center; margin: 30px 0; }
+.moments-title { font-size: 22px; margin-bottom: 36px; color: #fff; font-family: 'Space Mono', monospace; letter-spacing: 2px; }
+.moments-row { display: flex; gap: 22px; justify-content: center; }
+.moment-card { width: 300px; background: #0f0f10; border-radius: 18px; padding: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+.moment-card img { width: 100%; height: auto; border-radius: 12px; margin-bottom: 12px; display: block; }
+.moment-card h4 { margin: 0 0 6px 0; font-size: 16px; color: #fff; }
+.moment-card p { margin: 0; color: #cfcfcf; font-size: 14px; }
+
+.thesis-cta .thesis-card { display: flex; gap: 48px; align-items: center; background: #0f0f10; padding: 36px; border-radius: 18px; box-shadow: 0 12px 36px rgba(0,0,0,0.25); margin: 30px 0; }
+.thesis-text h3 { margin: 0 0 12px 0; font-size: 22px; color: #fff; font-family: 'League Spartan', sans-serif; }
+.thesis-text p { margin: 0 0 12px 0; color: #cfcfcf; font-family: 'Space Mono', monospace; }
+.thesis-image { flex: 0 0 48%; }
+.thesis-image img { width: 100%; height: 320px; object-fit: cover; border-radius: 12px; display: block; }
+
+/* Ensure thesis image stays right-aligned regardless of text length */
+.thesis-text { flex: 1 1 48%; }
+.thesis-image { margin-left: auto; }
+
+.projects-invite { margin: 30px 0; }
+.invite-inner { display: flex; gap: 48px; align-items: center; justify-content: space-between; background: #0f0f10; padding: 28px; border-radius: 16px; }
+.invite-media { flex: 0 0 48%; }
+.invite-media img { width: 100%; height: 320px; object-fit: cover; border-radius: 12px; opacity: 0.95; display: block; }
+.invite-cta { flex: 1 1 48%; }
+.invite-cta h3 { margin: 0 0 12px 0; font-size: 22px; color: #fff; font-family: 'League Spartan', sans-serif; }
+.invite-cta p { margin: 0 0 12px 0; color: #cfcfcf; font-family: 'Space Mono', monospace; }
+
+/* Make the "View PDF" button narrower (less horizontal width) */
+.invite-cta .btn {
+  display: inline-block;
+  padding: 12px 18px;
+  max-width: 240px;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.about-back-wrap { text-align: center; margin-top: 10px; }
+.about-back-wrap { margin-top: 36px; }
+
+.about-hero,
+.skill-row,
+.thesis-cta .thesis-card,
+.invite-inner {
+  align-items: center;
+}
+
+/* Add thin separators between sections like the reference site */
+.about-container > header,
+.about-container > section,
+.about-back-wrap {
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-top: none;
+}
+
+.about-container > header::before,
+.about-container > section::before,
+.about-back-wrap::before {
+  content: '';
+  position: absolute;
+  /* near full-bleed: leave 12px from viewport edges while content keeps container padding */
+  left: calc(50% - 50vw + 18px);
+  right: calc(50% - 50vw + 18px);
+  top: -15px;
+  height: 1px;
+  /* mimic index: white caps at ends and softer center */
+  background: linear-gradient(90deg, rgba(255,255,255,0.95) 0 6px, rgba(255,255,255,0.16) 6px calc(100% - 6px), rgba(255,255,255,0.95) calc(100% - 6px));
+}
+
+/* hide the very first top line above header (user requested) */
+.about-container > header::before { display: none; }
+
+/* keep container centered with same padding as index */
+/* .about-container is defined earlier with max-width and padding */
+
+/* Small horizontal ticks at left/right edges to mimic Ben's little marks */
+.about-container > header::after,
+.about-container > section::after,
+.about-back-wrap::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background: rgba(255,255,255,0.95);
+  top: -15px;
+}
+.about-container > header::after { left: calc(50% - 50vw + 18px); }
+.about-container > section::after { left: calc(50% - 50vw + 18px); }
+.about-back-wrap::after { left: calc(50% - 50vw + 18px); }
+
+/* right side ticks */
+.about-container > header .tick-right,
+.about-container > section .tick-right,
+.about-back-wrap .tick-right { display: none; }
+.about-container > header::before { }
+.about-container > header::after { right: auto; }
+
+@media (min-width: 1000px) {
+  .about-container > header::after,
+  .about-container > section::after,
+  .about-back-wrap::after { right: calc(50% - 50vw + 18px); left: auto; }
+
+  /* Desktop: make the three moment cards expand to fill the container and align with other gray blocks */
+  .moments-row { justify-content: space-between; }
+  .moment-card { flex: 0 0 calc((100% - 44px) / 3); width: calc((100% - 44px) / 3); max-width: none; }
+}
+
+@media (max-width: 1000px) {
+  .about-hero { grid-template-columns: 1fr; }
+  .about-right { order: 0; }
+  .moments-row { flex-direction: column; align-items: center; }
+  .skill-row { flex-direction: column; align-items: stretch; }
+  .skill-block { width: 100%; min-height: auto; }
+  .moment-card { width: min(86%, 420px); }
+  .thesis-cta .thesis-card { flex-direction: column-reverse; align-items: stretch; }
+  .thesis-image img { width: 100%; }
+  /* Mobile: reset thesis image positioning so it centers and matches invite-media width */
+  .thesis-image { margin: 0 auto; flex: none; width: 100%; }
+  .thesis-image img { height: auto; }
+  /* reduce horizontal padding to remove large right gap inside the card */
+  .invite-inner { flex-direction: column; align-items: stretch; padding: 20px 12px; }
+  .invite-media { width: 100%; }
+  .invite-media img { width: 100%; height: auto; }
+    /* avoid forcing a percentage-derived width which can create unexpected gaps;
+      use auto width with a max cap so the button only takes needed space */
+    .invite-cta .btn { width: auto; max-width: 240px; }
+
+  /* Left-align the invite CTA and button on mobile (user preference) */
+  /* do not let invite-cta stretch unnecessarily; keep content left-aligned */
+  .invite-cta { display: block; text-align: left; width: auto; max-width: none; }
+  .invite-cta .btn { display: inline-block; margin: 12px 0 0 0; max-width: 240px; }
+  .about-container { padding: calc(56px + env(safe-area-inset-top)) 20px 28px; }
+  /* on small screens, keep lines within small viewport padding */
+  .about-container > header::before,
+  .about-container > section::before,
+  .about-back-wrap::before,
+  .about-container > header::after,
+  .about-container > section::after,
+  .about-back-wrap::after,
+  .decor-line,
+  .decor-line-thesis {
+    left: 20px !important;
+    right: 20px !important;
+  }
+}
+
+/* Decorative thin lines and plus symbols (inspired by reference) */
+.about-container { position: relative; }
+.decor-line { position: absolute; height: 1px; left: calc(50% - 50vw + 18px); right: calc(50% - 50vw + 18px); background: linear-gradient(90deg, rgba(255,255,255,0.95) 0 6px, rgba(255,255,255,0.16) 6px calc(100% - 6px), rgba(255,255,255,0.95) calc(100% - 6px)); }
+.decor-line-top { top: 28px; transform-origin: left center; }
+.decor-line-thesis { top: auto; bottom: 36%; left: calc(50% - 50vw + 18px); width: calc(38% - 18px); height: 1px; background: linear-gradient(90deg, rgba(255,255,255,0.95) 0 6px, rgba(255,255,255,0.16) 6px calc(100% - 6px), rgba(255,255,255,0.95) calc(100% - 6px)); }
+
+.decor-plus {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(93,169,255,0.95); /* blue accent similar to reference */
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(13,20,30,0.45);
+}
+.decor-plus:after { content: ''; }
+
+.decor-plus-hero { right: 10%; top: 8%; transform: translate(20%, -10%); }
+.decor-plus-moments-1 { left: 18%; top: 46%; transform: translate(-50%, -50%); }
+.decor-plus-moments-2 { right: 20%; top: 56%; transform: translate(50%, -50%); }
+
+/* Hide plus decorations (temporary) to remove blue circle */
+.decor-plus { display: none !important; }
+
+/* Hide any leftover top decor-line helper to avoid duplicate lines */
+.decor-line-top { display: none !important; }
+
+/* smaller subtle plus on mobile */
+@media (max-width: 600px) {
+  .decor-plus { width: 28px; height: 28px; font-size: 14px; }
+  .decor-plus-hero { right: 6%; top: 6%; }
+  .decor-plus-moments-1, .decor-plus-moments-2 { display: none; }
+  .decor-line-top { top: 18px; }
+}
+
+/* Remove stray small tick/line that appears in the top-right corner */
+.about-container > header::after { display: none !important; }
+
+/* Remove the final bottom separator above the footer */
+.about-back-wrap::before { display: none !important; }
+.about-back-wrap::after { display: none !important; }
+
+/* Ensure dark/gray "card" sections have consistent width on small screens */
+@media (max-width: 1000px) {
+  .moment-card,
+  .thesis-cta .thesis-card,
+  .invite-inner,
+  .projects-invite .invite-inner,
+  .learn-more-inner,
+  .skill-block {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* Make the learn-more CTA match the other card styles */
+  .learn-more-inner {
+    background: #0f0f10;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    /* expand to the container edges (about-container has 20px padding on mobile) */
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    box-sizing: border-box;
+  }
+
+  /* Reduce heavy paddings slightly to keep consistent visual rhythm */
+  .thesis-cta .thesis-card,
+  .invite-inner {
+    padding: 20px;
+  }
+
+  .learn-more-title { text-align: center; margin: 0 0 6px 0; }
+  .learn-more-btn { display: inline-flex; width: min(100%, 320px); }
+}
+
+/* Remove the gray box for the "View My Online Work" section on all viewports */
+.learn-more-inner {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  width: auto !important;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}

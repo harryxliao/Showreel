@@ -1,0 +1,338 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="DMI Website — Harry Liao led the redesign of the Dynamic Media Institute website at MassArt, modernizing the visual identity and web architecture while introducing a comprehensive rebranding.">
+  <meta name="keywords"
+    content="Harry Liao, DMI, Dynamic Media Institute, MassArt, Website Redesign, Rebranding, UX Design, Web Design">
+  <meta name="author" content="Xian-Hao (Harry) Liao">
+  <meta name="robots" content="index, follow">
+  <title>DMI Website | Harry Liao Portfolio</title>
+
+  <link rel="alternate" hreflang="x-default" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="en" href="https://harryliao.design/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://harryliao.design/zh/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://harryliao.design/">
+  <meta property="og:title" content="DMI Website | Harry Liao Portfolio">
+  <meta property="og:description"
+    content="DMI Website redesign — Harry Liao modernized the Dynamic Media Institute website and brand identity at MassArt.">
+  <meta property="og:image" content="https://harryliao.design/images/TB.webp">
+  <meta property="og:site_name" content="Harry Liao Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://harryliao.design/">
+  <meta name="twitter:title" content="DMI Website | Harry Liao Portfolio">
+  <meta name="twitter:description"
+    content="DMI Website redesign — Harry Liao modernized the Dynamic Media Institute website and brand identity at MassArt.">
+  <meta name="twitter:image" content="https://harryliao.design/images/TB.webp">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xian-Hao (Harry) Liao",
+    "url": "https://harryliao.design/",
+    "jobTitle": "Multimedia Designer",
+    "alumniOf": "Massachusetts College of Art and Design",
+    "sameAs": [
+      "https://www.linkedin.com/in/xian-hao-liao/",
+      "https://www.behance.net/xianhaoliao-design",
+      "https://www.instagram.com/xianhaoliao.design/",
+      "https://www.youtube.com/@HarryLiaoVideo"
+    ]
+  }
+  </script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="../icon.ico" type="icon">
+  <link type="image/x-icon" href="../icon.ico" rel="icon">
+  <link type="image/x-icon" href="../icon.ico" rel="shortcut icon">
+  <link type="image/x-icon" href="../icon.ico" rel="bookmark">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="preload" as="style" href="../assets/css/about.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <link rel="preload" as="style" href="../assets/css/work.css">
+  <link rel="stylesheet" href="../assets/css/work.css">
+  <link rel="preload" as="style" href="../assets/css/contact.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  <link rel="stylesheet" href="../assets/css/project-detail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/navbar.js" defer></script>
+  <script src="../assets/js/about.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/feature.js" defer></script>
+  <script src="../assets/js/lazy-images.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="../assets/js/animations.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Black+Ops+One&family=League+Spartan:wght@700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <script>
+    try {
+      const path = location.pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+      const isZh = path.startsWith('zh');
+      const page = isZh ? path.replace(/^zh\/?/, '') : path;
+      if (/^(about|work|contact)$/i.test(page)) {
+        document.documentElement.classList.add('spa-loading');
+        document.body.classList.add('spa-loading');
+      }
+    } catch (e) { }
+  </script>
+
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="/" class="main-menu-link" data-menu-key="home">HOME</a>
+      <a href="/about" class="main-menu-link" data-menu-key="about">ABOUT</a>
+      <a href="/work/" class="main-menu-link active" data-menu-key="work">• WORK</a>
+      <a href="/contact" class="main-menu-link" data-menu-key="contact">CONTACT</a>
+    </div>
+
+    <div class="nav-center">
+      <a href="/" class="logo-link">HARRY LIAO</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer"
+        class="social-link">Be</a>
+      <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer"
+        class="social-link">in</a>
+      <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer"
+        class="social-link">YT</a>
+      <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer"
+        class="social-link">IG</a>
+      <button class="lang-toggle desktop-lang-toggle" type="button" data-lang-toggle><span
+          class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+          class="lang-option lang-zh">中</span></button>
+    </div>
+
+    <button class="mobile-menu-toggle" id="openMenuBtn" aria-label="Open menu">☰</button>
+    <button class="lang-toggle mobile-lang-toggle" type="button" data-lang-toggle><span
+        class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+        class="lang-option lang-zh">中</span></button>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="menu-header">
+      <a href="/" class="logo-link">HARRY LIAO</a>
+      <div class="menu-header-actions">
+        <button class="lang-toggle overlay-lang-toggle" type="button" data-lang-toggle><span
+            class="lang-option lang-en">EN</span><span class="lang-sep">/</span><span
+            class="lang-option lang-zh">中</span></button>
+        <button class="close-btn" id="closeMenuBtn" aria-label="Close menu">♦ CLOSE ♦</button>
+      </div>
+    </div>
+
+    <div class="menu-divider"></div>
+
+    <nav class="mobile-nav-links">
+      <a href="/" class="mobile-link" data-menu-key="home">HOME</a>
+      <a href="/about" class="mobile-link" data-menu-key="about">ABOUT</a>
+      <a href="/work/" class="mobile-link active" data-menu-key="work">WORK</a>
+      <a href="/contact" class="mobile-link" data-menu-key="contact">CONTACT</a>
+    </nav>
+
+    <div class="menu-divider"></div>
+
+    <div class="mobile-socials">
+      <span class="arrows">&gt;&gt;</span>
+      <div class="social-icons">
+        <a href="https://www.behance.net/xianhaoliao-design" target="_blank" rel="noopener noreferrer">Be</a>
+        <a href="https://www.linkedin.com/in/xian-hao-liao/" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://www.youtube.com/@HarryLiaoVideo" target="_blank" rel="noopener noreferrer">YT</a>
+        <a href="https://www.instagram.com/xianhaoliao.design/" target="_blank" rel="noopener noreferrer">IG</a>
+      </div>
+      <span class="arrows">&lt;&lt;</span>
+    </div>
+
+    <div class="mobile-footer-text">// Designing the next reality.</div>
+  </div>
+
+  <div id="mainContent">
+
+    <div class="for-u-page">
+      <div class="for-u-container">
+
+        <!-- Project Header -->
+        <header class="project-header">
+          <div class="project-title-area">
+            <h1>DMI Website</h1>
+            <p class="subtitle"
+              data-i18n-zh="Harry 主導了 MassArt Dynamic Media Institute 網站的全面升級與品牌再設計。這個專案涵蓋網站架構重組、視覺識別更新，以及學術論文內容的整合管理，顯著提升了網站的載入速度與使用者參與度。">
+              Harry led the comprehensive upgrade and rebranding of the MassArt Dynamic Media Institute website. This
+              project encompassed website architecture restructuring, visual identity renewal, and management of
+              academic thesis content integration, significantly improving load times and user engagement.
+            </p>
+          </div>
+
+          <!-- Metadata -->
+          <div class="project-meta-table">
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="類別">Category</span>
+              <span class="meta-value" data-i18n-zh="網頁設計 / 品牌識別">Web Design / Branding</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="角色">Role</span>
+              <span class="meta-value" data-i18n-zh="網頁設計師 / 品牌設計師">Web Designer / Brand Designer</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="年份">Date</span>
+              <span class="meta-value">2022 – 2024</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label" data-i18n-zh="機構">Institution</span>
+              <span class="meta-value">MassArt DMI</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Image — Macbook Mockup -->
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/DMI_Macbook Pro Mockup.webp" alt="DMI Website Macbook Mockup" loading="eager">
+          </div>
+        </section>
+
+        <!-- Institute Website Upgrade -->
+        <section class="content-grid-2col">
+          <div class="text-section">
+            <span class="section-kicker" data-i18n-zh="總覽">Overview</span>
+            <h3 data-i18n-zh="機構網站升級">Institute Website Upgrade</h3>
+            <p data-i18n-zh="Harry 在 MassArt DMI 期間，全面優化了學院動態媒體研究所的網站架構表現。透過精簡圖片資料與管理複雜的論文內容，大幅提升了網站載入速度與學術社群的使用者參與度。同時，Harry 也主導了品牌再設計，讓 DMI 在視覺上煥然一新。">
+              During his time at MassArt DMI, Harry optimized the architectural performance of the Dynamic Media
+              Institute's web platforms. By streamlining image data and managing complex thesis content, he
+              significantly improved load times and user engagement within the academic community. Harry also led the
+              rebranding initiative that gave DMI a fresh new visual identity.
+            </p>
+            <ul class="dmi-role-list">
+              <li data-i18n-zh="網站架構優化">Website Architecture Optimization</li>
+              <li data-i18n-zh="品牌識別再設計">Brand Identity Redesign</li>
+              <li data-i18n-zh="論文內容整合管理">Thesis Content Management</li>
+            </ul>
+          </div>
+          <div class="media-block media-block--flush">
+            <div class="image-wrapper image-wrapper--transparent">
+              <img src="../images/Project/DMI/DMI_Website.webp" alt="DMI Website" loading="lazy" class="img--contained-tall">
+            </div>
+          </div>
+        </section>
+
+        <!-- Tools & Software -->
+        <section class="content-grid-2col">
+          <div class="media-block media-block--flush media-block--video">
+            <video autoplay muted loop playsinline controls class="block-video">
+              <source src="../images/Project/DMI/DMI VIDEO.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="text-section">
+            <span class="section-kicker" data-i18n-zh="工具">Tools</span>
+            <h3 data-i18n-zh="工具與軟體">Tools &amp; Software</h3>
+            <p data-i18n-zh="Harry 使用 Figma 進行網站的 UI 設計與原型製作，透過 WordPress 系統進行內容管理，並使用 Adobe Creative Suite 進行品牌視覺的設計與製作。整個工作流程涵蓋了從設計策略到最終開發交付的完整鏈路。">
+              Harry used Figma for UI design and prototyping, WordPress for content management, and Adobe Creative
+              Suite for brand visual design. The workflow covered the complete chain from design strategy to final
+              development handoff.
+            </p>
+            <ul class="dmi-role-list">
+              <li data-i18n-zh="Figma — UI 設計與原型">Figma — UI Design &amp; Prototype</li>
+              <li data-i18n-zh="WordPress — 內容管理系統">WordPress — CMS</li>
+              <li data-i18n-zh="Adobe Photoshop / Illustrator">Adobe Photoshop / Illustrator</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Before / After Quote -->
+        <div class="dmi-quote-banner">
+          <h2 data-i18n-zh="*品牌再造後，DMI 網站煥然一新*">*With Rebranding, DMI Website Looks Updated*</h2>
+        </div>
+
+        <!-- Logo Ideations -->
+        <div class="dmi-logo-grid">
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/Logo Ideation-16.png" alt="DMI Original Logo Concept" loading="lazy">
+          </div>
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/Logo Ideation-17.png" alt="DMI Logo Iteration" loading="lazy">
+          </div>
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/Logo Ideation-18.png" alt="DMI Redesigned Logo" loading="lazy">
+          </div>
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/Logo Ideation-19.png" alt="DMI Logo Final 1" loading="lazy">
+          </div>
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/Logo Ideation-20.png" alt="DMI Logo Final 2" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Full Redesign Screenshot -->
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/DMI_Redesign-1.webp" alt="DMI Website Full Redesign" loading="lazy">
+          </div>
+        </section>
+
+
+
+        <!-- Graduate Photo -->
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/DMI_graduate.webp" alt="DMI MassArt Graduation" loading="lazy">
+          </div>
+        </section>
+
+        <!-- DMI Posters -->
+        <section class="media-block full-width">
+          <div class="image-wrapper">
+            <img src="../images/Project/DMI/Glued-Posters-Mockup.jpg" alt="DMI Posters" loading="lazy">
+          </div>
+        </section>
+
+        <!-- Footer CTA -->
+        <section class="learn-more-section learn-more-section--spaced">
+          <div class="learn-more-inner">
+            <h2 class="learn-more-title" data-i18n-zh="期待很快與您對話！">Looking Forward To Speaking With You Soon!</h2>
+            <a href="/work/" data-spa-target="work" class="learn-more-btn">
+              <span data-i18n-zh="查看更多作品">See more work</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="tech-divider bottom-divider"></div>
+
+    <div class="giant-name-container">
+      <h1 class="giant-name">HARRY LIAO</h1>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-left">©2026 ALL RIGHTS RESERVED.</div>
+      <div class="footer-right">
+        <!-- email_off --><a href="mailto:harryxliao@gmail.com">HARRYXLIAO@GMAIL.COM</a><!-- /email_off -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
